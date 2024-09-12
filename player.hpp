@@ -8,7 +8,7 @@ class Player {
 public:
     Player();
     ~Player();
-    void Draw();
+    void Draw() const;
     void Update();
 private:
     Texture2D image{};
@@ -20,8 +20,11 @@ private:
     int framesSpeed;
     int currentFrame;
     int framesCounter;
-    void frameUpdate(int dir);
-    bool onGround();
+
+    float speed;
+
+    void frameUpdate();
+    bool onGround() const;
     float gravity;
     bool jumping;
     float jumpForce;

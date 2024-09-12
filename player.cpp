@@ -2,16 +2,19 @@
 
 Player::Player() {
     image = LoadTexture("../Graphics/scarfy.png");
-    velocity = { 0.0f, 0.0f };
+    image.height /= 2;
+    image.width /= 2;
+    velocity = { 10.0f, 0.0f };
     ground = { 0.0f, 300.0f };
     position = { 0.0f, ground.y - static_cast<float>(image.height) };
+    speed = 20.0f;
 
-    frameRec = { 0.0f, 0.0f, (float)image.width/6, (float)image.height };
+    frameRec = { 0.0f, 0.0f, static_cast<float>(image.width)/6, static_cast<float>(image.height) };
     currentFrame = 0;
     framesCounter = 0;
     framesSpeed = 10;
 
-    gravity = 0.5f;
+    gravity = 1.0f;
     jumping = false;
     jumpForce = -12.0f;
 }
@@ -19,65 +22,63 @@ Player::Player() {
 Player::~Player() {
     UnloadTexture(image);
 }
-void Player::Draw() {
+void Player::Draw() const {
     DrawTextureRec(image, frameRec, position, WHITE);
     DrawLine(0,static_cast<int>(ground.y), GetScreenWidth(), static_cast<int>(ground.y), BLACK);
+    DrawText(to_string(velocity.x).c_str(),20,20,30,BLACK);
 }
 
 void Player::Update() {
-
-    framesCounter++;
-    if (IsKeyDown(KEY_UP) && onGround()) {
-        if (framesCounter >= (60/framesSpeed)) {
-            framesCounter = 0;
-            currentFrame++;
+    if (onGround()) {
+        if (IsKeyDown(KEY_UP)) {
             jumping = true;
             velocity.y = jumpForce;
         }
+        if (IsKeyDown(KEY_RIGHT)) {
+            if (frameRec.width < 0) {  // player facing left but now turning right
+                frameRec.width *= -1;
+            }
+            velocity.x = speed;
+        }else if (IsKeyDown(KEY_LEFT)) {
+            if (frameRec.width > 0) {  // player facing right but now turning right
+                frameRec.width *= -1;;
+            }
+            velocity.x = -speed;
+        }
+        else {
+            velocity.x = 0.0f;
+        }
     }
-    if (!onGround() || jumping) {
+    else if (!onGround() || jumping) {
         position.y += velocity.y;
         velocity.y += gravity;  // Gravity decreases the upward velocity until the player falls
 
         // Stop falling when the player reaches the ground
-        if (position.y + (float)image.height >= ground.y) {
+        if (position.y + static_cast<float>(image.height) >= ground.y) {
             position.y = ground.y - static_cast<float>(image.height);
             velocity.y = 0.0f;
             jumping = false;
         }
     }
-
-    if (IsKeyDown(KEY_RIGHT)) frameUpdate(KEY_RIGHT);
-
-    if (IsKeyDown(KEY_LEFT))  frameUpdate(KEY_LEFT);
+    frameUpdate();
 
 }
 
-void Player::frameUpdate(int dir) {
+void Player::frameUpdate() {
+    framesCounter++;
     if (framesCounter >= (60/framesSpeed))
     {
         framesCounter = 0;
-        currentFrame++;
-
+        if (velocity.x != 0.0f || velocity.y != 0.0f) {
+            currentFrame++;
+            position.x += velocity.x;
+            position.y += velocity.y;
+        }
         if (currentFrame > 5) currentFrame = 0;
         frameRec.x = static_cast<float>(currentFrame)*static_cast<float>(image.width)/6;
-
-        if (dir == KEY_RIGHT ) {
-            if (frameRec.width < 0) {  // player facing left but now turning right
-                frameRec.width *= -1;;
-            }
-            position.x+= static_cast<float>(framesSpeed) * 2;
-        }
-        if (dir == KEY_LEFT ) {
-            if (frameRec.width > 0) {  // player facing right but now turning right
-                frameRec.width *= -1;;
-            }
-            position.x-= static_cast<float>(framesSpeed) * 2;
-        }
-
     }
 }
 
-bool Player::onGround() {
+bool Player::onGround() const {
     return position.y + static_cast<float>(image.height) >= ground.y;
 }
