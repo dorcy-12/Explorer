@@ -26,6 +26,7 @@ void Player::Draw() const {
     DrawTextureRec(image, frameRec, position, WHITE);
     DrawLine(0,static_cast<int>(ground.y), GetScreenWidth(), static_cast<int>(ground.y), BLACK);
     DrawText(to_string(velocity.x).c_str(),20,20,30,BLACK);
+    DrawText(to_string(velocity.y).c_str(),20,50,30,BLACK);
 }
 
 void Player::Update() {
@@ -34,6 +35,7 @@ void Player::Update() {
             jumping = true;
             velocity.y = jumpForce;
         }
+
         if (IsKeyDown(KEY_RIGHT)) {
             if (frameRec.width < 0) {  // player facing left but now turning right
                 frameRec.width *= -1;
@@ -44,8 +46,7 @@ void Player::Update() {
                 frameRec.width *= -1;;
             }
             velocity.x = -speed;
-        }
-        else {
+        }else {
             velocity.x = 0.0f;
         }
     }
@@ -69,10 +70,15 @@ void Player::frameUpdate() {
     if (framesCounter >= (60/framesSpeed))
     {
         framesCounter = 0;
-        if (velocity.x != 0.0f || velocity.y != 0.0f) {
-            currentFrame++;
-            position.x += velocity.x;
+        if (velocity.y<0.0f) {
+            currentFrame=2;
             position.y += velocity.y;
+            position.x += velocity.x;
+        }
+        else if (velocity.x != 0.0f || velocity.y > 0.0f) {
+            currentFrame++;
+            position.y += velocity.y;
+            position.x += velocity.x;
         }
         if (currentFrame > 5) currentFrame = 0;
         frameRec.x = static_cast<float>(currentFrame)*static_cast<float>(image.width)/6;
