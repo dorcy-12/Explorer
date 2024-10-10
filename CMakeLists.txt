@@ -11,8 +11,6 @@ find_library(OPENGL_FRAMEWORK OpenGL)
 
 
 add_executable(Explorer main.cpp
-        SoundEffects.cpp
-        SoundEffects.hpp
         InputHandler.cpp
         InputHandler.hpp
         Command.cpp
