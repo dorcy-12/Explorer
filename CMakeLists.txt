@@ -11,7 +11,20 @@ find_library(OPENGL_FRAMEWORK OpenGL)
 
 
 add_executable(Explorer main.cpp
-        player.cpp
-        player.hpp)
+        SoundEffects.cpp
+        SoundEffects.hpp
+        InputHandler.cpp
+        InputHandler.hpp
+        Command.cpp
+        Command.h
+        Scene.cpp
+        Scene.hpp
+        Actor.hpp
+        Scarfy.cpp
+        Scarfy.hpp
+        Actor.cpp
+        ScarfyScene.cpp
+        ScarfyScene.hpp
+)
 
 target_link_libraries(Explorer raylib ${OPENGL_FRAMEWORK} ${COCOA_FRAMEWORK} ${IOKIT_FRAMEWORK})
