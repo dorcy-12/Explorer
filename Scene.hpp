@@ -16,6 +16,9 @@ public:
     virtual void start();
     virtual shared_ptr<Scene> update();
 
+    /** Returns True if the Window should Close*/
+    virtual bool shouldQuit();
+
     virtual void draw();
     virtual void goUp();
     virtual void goDown();

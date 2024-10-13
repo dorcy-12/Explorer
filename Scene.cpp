@@ -57,8 +57,7 @@ void Scene::draw() {
             actor->draw();
         }
     }else {
-        DrawText("No Content Available", 20, 20, 20, RED);
-
+        DrawText("This Scene has no Content Available", 20, 20, 30, RED);
     }
 }
 
@@ -89,5 +88,8 @@ void Scene::goNowhere() {
 
 void Scene::interact() {
     if (playerAvatar) playerAvatar->interact();
+}
+bool Scene::shouldQuit() {
+    return false;
 }
 

@@ -52,56 +52,56 @@ build cmake_object_order_depends_target_Explorer: phony || .
 build CMakeFiles/Explorer.dir/main.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/main.cpp || cmake_object_order_depends_target_Explorer
   DEP_FILE = CMakeFiles/Explorer.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
-  INCLUDES = -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
-  OBJECT_DIR = CMakeFiles/Explorer.dir
-  OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
-
-build CMakeFiles/Explorer.dir/SoundEffects.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/SoundEffects.cpp || cmake_object_order_depends_target_Explorer
-  DEP_FILE = CMakeFiles/Explorer.dir/SoundEffects.cpp.o.d
-  FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
-  INCLUDES = -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/Explorer.dir
   OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
 
 build CMakeFiles/Explorer.dir/InputHandler.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/InputHandler.cpp || cmake_object_order_depends_target_Explorer
   DEP_FILE = CMakeFiles/Explorer.dir/InputHandler.cpp.o.d
   FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
-  INCLUDES = -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/Explorer.dir
   OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
 
 build CMakeFiles/Explorer.dir/Command.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/Command.cpp || cmake_object_order_depends_target_Explorer
   DEP_FILE = CMakeFiles/Explorer.dir/Command.cpp.o.d
   FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
-  INCLUDES = -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/Explorer.dir
   OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
 
 build CMakeFiles/Explorer.dir/Scene.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/Scene.cpp || cmake_object_order_depends_target_Explorer
   DEP_FILE = CMakeFiles/Explorer.dir/Scene.cpp.o.d
   FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
-  INCLUDES = -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/Explorer.dir
   OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
 
 build CMakeFiles/Explorer.dir/Scarfy.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/Scarfy.cpp || cmake_object_order_depends_target_Explorer
   DEP_FILE = CMakeFiles/Explorer.dir/Scarfy.cpp.o.d
   FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
-  INCLUDES = -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/Explorer.dir
   OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
 
 build CMakeFiles/Explorer.dir/Actor.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/Actor.cpp || cmake_object_order_depends_target_Explorer
   DEP_FILE = CMakeFiles/Explorer.dir/Actor.cpp.o.d
   FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
-  INCLUDES = -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/Explorer.dir
   OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
 
 build CMakeFiles/Explorer.dir/ScarfyScene.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/ScarfyScene.cpp || cmake_object_order_depends_target_Explorer
   DEP_FILE = CMakeFiles/Explorer.dir/ScarfyScene.cpp.o.d
   FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
-  INCLUDES = -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/Explorer.dir
+  OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
+
+build CMakeFiles/Explorer.dir/MainMenuScene.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/MainMenuScene.cpp || cmake_object_order_depends_target_Explorer
+  DEP_FILE = CMakeFiles/Explorer.dir/MainMenuScene.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/Explorer.dir
   OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
 
@@ -113,7 +113,7 @@ build CMakeFiles/Explorer.dir/ScarfyScene.cpp.o: CXX_COMPILER__Explorer_unscanne
 #############################################
 # Link the executable Explorer
 
-build Explorer: CXX_EXECUTABLE_LINKER__Explorer_Debug CMakeFiles/Explorer.dir/main.cpp.o CMakeFiles/Explorer.dir/SoundEffects.cpp.o CMakeFiles/Explorer.dir/InputHandler.cpp.o CMakeFiles/Explorer.dir/Command.cpp.o CMakeFiles/Explorer.dir/Scene.cpp.o CMakeFiles/Explorer.dir/Scarfy.cpp.o CMakeFiles/Explorer.dir/Actor.cpp.o CMakeFiles/Explorer.dir/ScarfyScene.cpp.o | /usr/local/lib/libraylib.dylib
+build Explorer: CXX_EXECUTABLE_LINKER__Explorer_Debug CMakeFiles/Explorer.dir/main.cpp.o CMakeFiles/Explorer.dir/InputHandler.cpp.o CMakeFiles/Explorer.dir/Command.cpp.o CMakeFiles/Explorer.dir/Scene.cpp.o CMakeFiles/Explorer.dir/Scarfy.cpp.o CMakeFiles/Explorer.dir/Actor.cpp.o CMakeFiles/Explorer.dir/ScarfyScene.cpp.o CMakeFiles/Explorer.dir/MainMenuScene.cpp.o | /usr/local/lib/libraylib.dylib
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7
   LINK_LIBRARIES = /usr/local/lib/libraylib.dylib  -framework OpenGL  -framework Cocoa  -framework IOKit
   OBJECT_DIR = CMakeFiles/Explorer.dir

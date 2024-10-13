@@ -1,8 +1,12 @@
 #include <raylib.h>
 #include "InputHandler.hpp"
 #include "ScarfyScene.hpp"
+#include "MainMenuScene.hpp"
 #include <stddef.h>
 #include <stdlib.h>
+
+#include "raylib.h"
+
 
 using namespace std;
 
@@ -33,14 +37,15 @@ int main()
 
         InputHandler input_handler;
 
-        shared_ptr<Scene> currScene = make_shared<ScarfyScene>();
+        shared_ptr<Scene> currScene = make_shared<MainMenuScene>();
         currScene -> loadResources();
         currScene -> start();
 
+        bool quit = false;
 
         SetTargetFPS(60);
 
-        while (!WindowShouldClose())
+        while (!quit)
         {
             input_handler.handleInput(*currScene);
             auto nextScene = currScene -> update();
@@ -50,6 +55,7 @@ int main()
                 nextScene -> start();
                 currScene = nextScene;
             }
+            quit = WindowShouldClose() || currScene->shouldQuit();
 
             BeginDrawing();
 
@@ -72,3 +78,4 @@ int main()
 
     return 0;
 }
+
