@@ -103,7 +103,7 @@ vector<tson::Layer*> imageLayers;
 static raylib::Rectangle toRayLibRect(tson::Rect rect) {
     return raylib::Rectangle(rect.x, rect.y, rect.width, rect.height);
 }
-void DrawImageLayer(tson::Layer& layer, const raylib::Camera2D &camera,raylib::Vector2 offset, ::Color tint) {
+void DrawImageLayer(tson::Layer& layer, const raylib::Camera2D &camera,raylib::Vector2 offset, raylib::Vector2 parallaxEffect, ::Color tint) {
     auto imageName = layer.getImage();
 
     auto texIter = imageLayerTextures.find(imageName);
@@ -128,7 +128,7 @@ void DrawImageLayer(tson::Layer& layer, const raylib::Camera2D &camera,raylib::V
             texWidth, texHeight);
         raylib::Rectangle destRec(
              screenOriginPosition.x,
-             screenOriginPosition.y,
+             screenOriginPosition.y + parallaxEffect.y,
             repeatX ? GetScreenWidth() * scale  : texWidth,
             repeatY ? GetScreenHeight() * scale : texHeight);
         raylib::Vector2 origin = raylib::Vector2(0,0);
@@ -161,6 +161,7 @@ void DrawTileLayer(tson::Layer& layer, const raylib::Camera2D &camera, raylib::V
 
 void draw(unique_ptr<Map> &tileMap, const raylib::Camera2D &camera,::Color tint) {
     auto layers = tileMap->getLayers();
+    auto screenOriginPosition = camera.GetScreenToWorld(raylib::Vector2(0.0f, 0.0f));
     for (auto &layer: layers) {
         auto pFactorTson = layer.getParallax();
         auto pOriginTson = layer.getMap()->getParallaxOrigin();
@@ -168,17 +169,19 @@ void draw(unique_ptr<Map> &tileMap, const raylib::Camera2D &camera,::Color tint)
         raylib::Vector2 parallaxOrigin(pOriginTson.x, pOriginTson.y);
         auto layerOffset = layer.getOffset();
         raylib::Vector2 offset(layerOffset.x, layerOffset.y);
-        auto cameraOffset = camera.GetWorldToScreen(parallaxOrigin) + raylib::Vector2(GetScreenWidth() / 2, GetScreenHeight() / 2);
+        auto cameraOffset = camera.GetWorldToScreen(parallaxOrigin) + raylib::Vector2(-GetScreenWidth() / 2, -GetScreenHeight() / 2);
+        raylib::Vector2 parallaxEffect = cameraOffset *  parallaxFactor;
+        raylib::Vector2 newOffset = offset - parallaxEffect;
 
-        raylib::Vector2 newOffset = offset - cameraOffset * (raylib::Vector2(1.0f, 1.0f) - parallaxFactor);
 
 
         if ( layer.getType() == LayerType::TileLayer ) {
             DrawTileLayer(layer, camera, newOffset,::RAYWHITE);
         }else if (layer.getType() == LayerType::ImageLayer) {
-            DrawImageLayer(layer,camera, newOffset,::RAYWHITE);
+            DrawImageLayer(layer,camera, newOffset, parallaxEffect, ::RAYWHITE);
         }
     }
+    DrawCircle(screenOriginPosition.x,screenOriginPosition.y,10,::RED);
 }
 
 int main() {
@@ -236,16 +239,16 @@ int main() {
         ClearBackground(::RAYWHITE);  // Clear before drawing
 
         if (IsKeyDown(KEY_UP)) {
-            camera->target.y -= 8;
+            camera->target.y -= 4;
         }
         else if (IsKeyDown(KEY_DOWN)) {
-            camera->target.y += 8;
+            camera->target.y += 4;
         }
         if (IsKeyDown(KEY_LEFT)) {
-            camera->target.x -= 8;
+            camera->target.x -= 4;
         }
         else if (IsKeyDown(KEY_RIGHT)) {
-            camera->target.x += 8;
+            camera->target.x += 4;
         }
 
 
