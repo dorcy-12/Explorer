@@ -1,5 +1,5 @@
 #pragma once
-#include "Command.h"
+#include "Command.hpp"
 #include "raylib.h"
 
 class Actor : public Command {
@@ -7,7 +7,7 @@ public:
     Actor();
     ~Actor();
     virtual void draw();
-    virtual void update(bool onGround);
+    virtual bool update(bool onGround);
     virtual Rectangle getBoundingBox();
 
 

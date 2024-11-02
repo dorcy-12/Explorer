@@ -11,7 +11,8 @@ void Actor::draw() {
     DrawText("Override the Draw Method",20,20,20,RED);
 }
 
-void Actor::update(bool onGround) {
+bool Actor::update(bool onGround) {
+    return true;
 }
 
 Rectangle Actor::getBoundingBox() {

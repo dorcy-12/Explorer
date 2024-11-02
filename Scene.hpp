@@ -1,7 +1,7 @@
 #pragma once
 #include <memory>
 #include <list>
-#include "Command.h"
+#include "Command.hpp"
 using namespace std;
 
 class Actor;

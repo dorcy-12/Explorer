@@ -105,6 +105,34 @@ build CMakeFiles/Explorer.dir/MainMenuScene.cpp.o: CXX_COMPILER__Explorer_unscan
   OBJECT_DIR = CMakeFiles/Explorer.dir
   OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
 
+build CMakeFiles/Explorer.dir/TileMap2DScene.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/TileMap2DScene.cpp || cmake_object_order_depends_target_Explorer
+  DEP_FILE = CMakeFiles/Explorer.dir/TileMap2DScene.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/Explorer.dir
+  OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
+
+build CMakeFiles/Explorer.dir/TileMapLoader.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/TileMapLoader.cpp || cmake_object_order_depends_target_Explorer
+  DEP_FILE = CMakeFiles/Explorer.dir/TileMapLoader.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/Explorer.dir
+  OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
+
+build CMakeFiles/Explorer.dir/TrackingCamera2D.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/TrackingCamera2D.cpp || cmake_object_order_depends_target_Explorer
+  DEP_FILE = CMakeFiles/Explorer.dir/TrackingCamera2D.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/Explorer.dir
+  OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
+
+build CMakeFiles/Explorer.dir/TileMap2D.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/TileMap2D.cpp || cmake_object_order_depends_target_Explorer
+  DEP_FILE = CMakeFiles/Explorer.dir/TileMap2D.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/Explorer.dir
+  OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Explorer
@@ -113,7 +141,7 @@ build CMakeFiles/Explorer.dir/MainMenuScene.cpp.o: CXX_COMPILER__Explorer_unscan
 #############################################
 # Link the executable Explorer
 
-build Explorer: CXX_EXECUTABLE_LINKER__Explorer_Debug CMakeFiles/Explorer.dir/main.cpp.o CMakeFiles/Explorer.dir/InputHandler.cpp.o CMakeFiles/Explorer.dir/Command.cpp.o CMakeFiles/Explorer.dir/Scene.cpp.o CMakeFiles/Explorer.dir/Scarfy.cpp.o CMakeFiles/Explorer.dir/Actor.cpp.o CMakeFiles/Explorer.dir/ScarfyScene.cpp.o CMakeFiles/Explorer.dir/MainMenuScene.cpp.o | /usr/local/lib/libraylib.dylib
+build Explorer: CXX_EXECUTABLE_LINKER__Explorer_Debug CMakeFiles/Explorer.dir/main.cpp.o CMakeFiles/Explorer.dir/InputHandler.cpp.o CMakeFiles/Explorer.dir/Command.cpp.o CMakeFiles/Explorer.dir/Scene.cpp.o CMakeFiles/Explorer.dir/Scarfy.cpp.o CMakeFiles/Explorer.dir/Actor.cpp.o CMakeFiles/Explorer.dir/ScarfyScene.cpp.o CMakeFiles/Explorer.dir/MainMenuScene.cpp.o CMakeFiles/Explorer.dir/TileMap2DScene.cpp.o CMakeFiles/Explorer.dir/TileMapLoader.cpp.o CMakeFiles/Explorer.dir/TrackingCamera2D.cpp.o CMakeFiles/Explorer.dir/TileMap2D.cpp.o | /usr/local/lib/libraylib.dylib
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7
   LINK_LIBRARIES = /usr/local/lib/libraylib.dylib  -framework OpenGL  -framework Cocoa  -framework IOKit
   OBJECT_DIR = CMakeFiles/Explorer.dir

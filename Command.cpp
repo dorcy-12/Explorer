@@ -2,7 +2,7 @@
 // Created by Dorcy Agape on 08.10.24.
 //
 
-#include "Command.h"
+#include "Command.hpp"
 
 Command::Command() {
 }

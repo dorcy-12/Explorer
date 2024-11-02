@@ -9,7 +9,7 @@ public:
 
     virtual void draw();
 
-    virtual void update(bool onGround);
+    virtual bool update(bool onGround);
 
     virtual Rectangle getBoundingBox();
 

@@ -22,7 +22,7 @@ add_executable(Explorer main.cpp
         InputHandler.cpp
         InputHandler.hpp
         Command.cpp
-        Command.h
+        Command.hpp
         Scene.cpp
         Scene.hpp
         Actor.hpp
@@ -33,6 +33,17 @@ add_executable(Explorer main.cpp
         ScarfyScene.hpp
         MainMenuScene.cpp
         MainMenuScene.hpp
+        tileson.hpp
+        TileMap2DScene.cpp
+        TileMap2DScene.hpp
+        TileMapLoader.cpp
+        TileMapLoader.hpp
+        pocketlzma.hpp
+        TrackingCamera2D.cpp
+        TrackingCamera2D.hpp
+        TileMap2D.cpp
+        TileMap2D.hpp
+        Common.hpp
 )
 
 #target_link_libraries(Explorer raylib ${OPENGL_FRAMEWORK} ${COCOA_FRAMEWORK} ${IOKIT_FRAMEWORK} ${GLUT_FRAMEWORK} ${COREVIDEO_FRAMEWORK})

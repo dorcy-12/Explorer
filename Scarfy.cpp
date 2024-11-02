@@ -46,7 +46,7 @@ void Scarfy::draw() {
  *
  */
 
-void Scarfy::update(bool onGround) {
+bool Scarfy::update(bool onGround) {
     bool isMoving = velocity.x != 0.0f || velocity.y != 0.0f;
 
     bool wasOnGround = isOnGround;
@@ -75,11 +75,9 @@ void Scarfy::update(bool onGround) {
             }
             frameRect.x = static_cast<float>(frameIndex)* static_cast<float>(frameWidth);
         }
-        else {
 
-        }
     }
-
+    return true;
 }
 
 
