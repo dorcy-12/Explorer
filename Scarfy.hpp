@@ -1,5 +1,7 @@
 #pragma once
 #include "Actor.hpp"
+#include "raylib-cpp-master/include/raylib-cpp.hpp"
+
 
 class Scarfy : public Actor {
 public:
@@ -28,8 +30,6 @@ public:
 
 private:
     Texture2D image;
-
-
     Sound footStepSound;
     Sound landingSound;
 

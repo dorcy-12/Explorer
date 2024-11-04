@@ -16,12 +16,27 @@ MainMenuScene::~MainMenuScene() {
 
 void MainMenuScene::draw() {
    //Title
-   DrawText("Scarfy!", 200, 100, 120, RED); // Title
+   int screenWidth = GetScreenWidth();
+   int screenHeight = GetScreenHeight();
+   int buttonWidth = 120;
+   int buttonHeight = 24;
+   DrawText("Scarfy!", screenWidth / 3, screenHeight /3, 120, RED); // Title
 
    //Play and Quit Buttons
 
-   startClicked = GuiButton((Rectangle){340,300,120,24},"Play");
-   quitClicked = GuiButton((Rectangle){340,340,120,24},GuiIconText(ICON_EXIT,"Quit"));
+   startClicked = GuiButton((Rectangle){
+      static_cast<float>((screenWidth / 2) - (buttonWidth / 2)),
+      static_cast<float>((screenHeight *3)/4),
+      120.0f,
+      24.0f
+   }, "Play");
+
+   quitClicked = GuiButton((Rectangle){
+      static_cast<float>((screenWidth / 2) - (buttonWidth / 2)),
+      static_cast<float>(((screenHeight *3)/4) + 40),
+      120,
+      24
+   },GuiIconText(ICON_EXIT,"Quit"));
    if ( quitClicked) shouldQuit();
 }
 

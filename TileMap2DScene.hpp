@@ -10,7 +10,7 @@ class TileMap2DScene: public Scene{
 public:
     TileMap2DScene();
 
-    TileMap2DScene(auto &filename);
+    TileMap2DScene(const std::string &filename);
 
     virtual ~TileMap2DScene();
 
@@ -18,7 +18,9 @@ public:
 
     shared_ptr<Scene> update() override;
 
-private:
+    raylib::Vector2 get2DSize() const override;
+
+protected:
     shared_ptr<TileMap2D> tileMap;
 };
 

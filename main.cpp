@@ -1,4 +1,4 @@
-/*
+
 #include <raylib.h>
 #include "InputHandler.hpp"
 #include "ScarfyScene.hpp"
@@ -6,12 +6,11 @@
 #include <stddef.h>
 #include <stdlib.h>
 
-#include "raylib.h"
 
 using namespace std;
 
-const int screenWidth = 800;
-const int screenHeight = 450;
+const int screenWidth = 1200;
+const int screenHeight = 600;
 
 void showErrorAndExit(const char *errMsg) {
     while (!WindowShouldClose()) {
@@ -58,11 +57,8 @@ int main()
             quit = WindowShouldClose() || currScene->shouldQuit();
 
             BeginDrawing();
-
-            currScene -> draw();
-
             ClearBackground(RAYWHITE);
-
+            currScene -> draw();
             EndDrawing();
         }
 
@@ -78,9 +74,9 @@ int main()
 
     return 0;
 }
-*/
 
 
+/*
 
 #include <iostream>
 #include <memory>    // Include for std::unique_ptr
@@ -275,3 +271,4 @@ int main() {
 
     return 0;
 }
+*/

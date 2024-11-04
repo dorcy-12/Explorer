@@ -16,7 +16,7 @@ TileMapLoader::TileMapLoader() {
 TileMapLoader::~TileMapLoader() {
 }
 
-std::unique_ptr<tson::Map> TileMapLoader::load2DMap(std::string &filename) {
+std::unique_ptr<tson::Map> TileMapLoader::loadTileMap(const std::string &filename) {
     tson::Tileson tileson;
 
     if (filename.ends_with('.lzma')) {

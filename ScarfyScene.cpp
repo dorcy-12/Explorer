@@ -3,6 +3,9 @@
 //
 
 #include "ScarfyScene.hpp"
+#include "TrackingCamera2D.hpp"
+#include "Common.hpp"
+#include "TileMap2D.hpp"
 
 using namespace std;
 
@@ -13,11 +16,33 @@ ScarfyScene::~ScarfyScene() {
 }
 
 void ScarfyScene::loadResources(){
-    shared_ptr<Scarfy> scarfy= make_shared<Scarfy>(); // create our scarfy actor
-
     int screenWidth = GetScreenWidth();
-    scarfy->position = Vector2{static_cast<float>(screenWidth) / 2, 0.0f};
+    int screenHeight = GetScreenHeight();
 
+
+    tileMap = std::make_shared<TileMap2D>(DATADIR "ScarfyMap.tmj");
+
+    auto mapSize = get2DSize();
+
+
+
+    raylib::Vector2 sceneSize(mapSize.x, mapSize.y);
+    raylib::Vector2 cameraOffset(screenWidth/2, screenHeight/2);
+    raylib::Vector2 cameraTarget(screenWidth/2,  (800+sceneSize.y ) - (screenHeight/2) );
+    groundYPos = cameraTarget.y + (screenHeight/2) ;
+
+
+    auto camera = make_shared<TrackingCamera2D>(cameraOffset, cameraTarget, 0, 0.7f);
+    setCamera(camera);
+
+
+
+    auto scarfy = make_shared<Scarfy>(); // create our scarfy actor
+
+
+    scarfy->position = raylib::Vector2(cameraTarget.x, cameraTarget.y);
+
+    this->camera->setTarget(scarfy);
     playerAvatar = scarfy;
     actors.emplace_back(scarfy);
 }

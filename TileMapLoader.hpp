@@ -5,7 +5,7 @@
 class TileMapLoader {
 public:
     TileMapLoader();
-    ~TileMapLoader();
-    std::unique_ptr<tson::Map> load2DMap(std::string &filename);
+    virtual ~TileMapLoader();
+    static std::unique_ptr<tson::Map> loadTileMap(const std::string &filename);
 };
 

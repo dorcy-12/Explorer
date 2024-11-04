@@ -10,14 +10,14 @@ const int leftFootFrame = 1;
 const int rightFootFrame = 4;
 
 
-Scarfy::Scarfy() {
+Scarfy::Scarfy(){
     image = LoadTexture("../Graphics/scarfy.png");
-    footStepSound = LoadSound("../Sounds/step-C.mp3");
-    landingSound =  LoadSound("../Sounds/step-A.mp3");
+    footStepSound = LoadSound ("../Sounds/step-C.mp3");
+    landingSound= LoadSound("../Sounds/step-A.mp3");
 
     numFrames = 6;
     frameWidth = image.width / 6;
-    frameDelay = 5;
+    frameDelay = 10;
     frameDelayCounter = 0;
     frameIndex = 0;
     frameRect = Rectangle{ 0.0f, 0.0f, static_cast<float>(frameWidth), static_cast<float>(image.height) } ;
@@ -36,7 +36,6 @@ Scarfy::~Scarfy() {
 
 void Scarfy::draw() {
     DrawTextureRec(image,frameRect,position,WHITE);
-    DrawCircle(position.x,position.y,5.0f,RED); // remove
 }
 
 

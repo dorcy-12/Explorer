@@ -6,22 +6,28 @@
 
 TrackingCamera2D::TrackingCamera2D(const TrackingCamera2D &camera):
         raylib::Camera2D(camera) {
+    this->targetActor = targetActor;
 }
 
 TrackingCamera2D::TrackingCamera2D() {
 }
 
-TrackingCamera2D::TrackingCamera2D(Vector2 position, Vector2 target, float rotation, float zoom) {
+TrackingCamera2D::TrackingCamera2D(Vector2 offset, Vector2 target, float rotation, float zoom):
+                    raylib::Camera2D(offset, target, rotation, zoom) {
+
 }
 
-void TrackingCamera2D::setTarget(std::shared_ptr<Actor> &target) {
-    this->target = target;
+void TrackingCamera2D::setTarget(const std::shared_ptr<Actor> &targetActor) {
+    this->targetActor = targetActor;
 }
 
 std::shared_ptr<Actor> TrackingCamera2D::getTarget() {
-    return target;
+    return targetActor;
 }
 
 bool TrackingCamera2D::update(bool onGround) {
-    return Actor::update(onGround);
+    // ## IS THIS NECESSARY? ###
+    this->target.x += targetActor->velocity.x;
+    //this->target.y += targetActor->velocity.y;
+    return onGround;
 }
