@@ -17,7 +17,7 @@ Scarfy::Scarfy(){
 
     numFrames = 6;
     frameWidth = image.width / 6;
-    frameDelay = 10;
+    frameDelay = 7;
     frameDelayCounter = 0;
     frameIndex = 0;
     frameRect = Rectangle{ 0.0f, 0.0f, static_cast<float>(frameWidth), static_cast<float>(image.height) } ;

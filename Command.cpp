@@ -28,3 +28,6 @@ void Command::goNowhere() {
 void Command::interact() {
 }
 
+void Command::doExit() {
+}
+

@@ -24,5 +24,6 @@ public:
 
 private:
     std::shared_ptr<Actor> targetActor;
+    raylib::Vector2 targetOffset;
 
 };

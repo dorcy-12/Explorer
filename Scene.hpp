@@ -34,12 +34,13 @@ public:
     virtual raylib::Vector2 get2DSize() const;
 
     virtual void draw();
-    virtual void goUp();
-    virtual void goDown();
-    virtual void goLeft();
-    virtual void goRight();
-    virtual void goNowhere();
-    virtual void interact();
+    void goUp()     override;
+    void goDown()   override;
+    void goLeft()   override;
+    void goRight()  override;
+    void goNowhere()override;
+    void interact() override;
+    void doExit()   override;
 
 protected:
 
@@ -55,6 +56,8 @@ protected:
     int groundYPos;
 
     float gravity;
+
+    bool exit;
 
 };
 

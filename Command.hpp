@@ -10,5 +10,6 @@ public:
     virtual void goRight();
     virtual void goNowhere();
     virtual void interact();
+    virtual void doExit();
 };
 

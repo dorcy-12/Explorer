@@ -42,7 +42,6 @@ shared_ptr<Scene> TileMap2DScene::update() {
     if(tileMap) {
         tileMap->updateAnimations(elapsedTime);
     }
-
     // ##### FIXME! ###### Handle collisions?
 
     return Scene::update();
@@ -51,7 +50,6 @@ shared_ptr<Scene> TileMap2DScene::update() {
 raylib::Vector2 TileMap2DScene::get2DSize() const {
     if(tileMap) {
         return tileMap->getMapSize();
-    } else {
-        return Scene::get2DSize();
     }
+    return Scene::get2DSize();
 }

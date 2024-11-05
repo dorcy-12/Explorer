@@ -27,6 +27,10 @@ void InputHandler::handleInput(Command &command) {
     if (IsKeyDown(KEY_SPACE)) {
         command.interact();
     }
+    if (IsKeyPressed(KEY_ESCAPE)) {
+        command.doExit();
+    }
+
 
 }
 

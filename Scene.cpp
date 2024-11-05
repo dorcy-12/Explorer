@@ -5,11 +5,13 @@
 #include "Scene.hpp"
 #include "raylib-cpp-master/include/raylib-cpp.hpp"
 #include "Actor.hpp"
+#include "MainMenuScene.hpp"
 
 Scene::Scene() {
     int sceneHeight = GetScreenHeight();
     groundYPos = (3 * sceneHeight) / 4;
-    gravity = 1;
+    gravity = 0.5f;
+    exit = false;
 }
 
 Scene::~Scene() {
@@ -43,7 +45,17 @@ shared_ptr<Scene> Scene::update() {
             actor->velocity.y += gravity;
         }
         actor->update(isOnGround);
-        camera->update(isOnGround);
+
+        if(camera) {
+            camera->update(false);
+        }
+
+        if(exit) {
+            exit = false;
+            return std::make_shared<MainMenuScene>();
+        } else {
+            return nullptr;
+        }
     }
     return nullptr;
 }
@@ -52,9 +64,6 @@ void Scene::draw() {
     if(camera) {
         camera->BeginMode();
     }
-
-    ClearBackground(RAYWHITE);
-
     drawActors();
 
     if(camera) {
@@ -93,6 +102,9 @@ void Scene::interact() {
 bool Scene::shouldQuit() {
     return false;
 }
+void Scene::doExit() {
+    exit = true;
+};
 
 void Scene::setCamera(std::shared_ptr<TrackingCamera2D> &camera) {
     this->camera = camera;
