@@ -7,28 +7,33 @@
 
 InputHandler::InputHandler() {}
 InputHandler::~InputHandler() {}
-void InputHandler::handleInput(Command &command) {
+void InputHandler::handleInput(Command &listener) {
     bool moving = false;
 
     if (IsKeyDown(KEY_UP)) {
-        command.goUp();
+        listener.goUp();
         moving = true;
     }
     if (IsKeyDown(KEY_RIGHT)) {
-        command.goRight();
+        listener.goRight();
         moving = true;
     }else if (IsKeyDown(KEY_LEFT)) {
-        command.goLeft();
+        listener.goLeft();
         moving = true;
     }
     if (!moving) {
-        command.goNowhere();
+        listener.goNowhere();
     }
     if (IsKeyDown(KEY_SPACE)) {
-        command.interact();
+        listener.interact();
     }
     if (IsKeyPressed(KEY_ESCAPE)) {
-        command.doExit();
+        listener.doExit();
+    }
+
+    int key;
+    while((key = GetKeyPressed()) != 0) {
+        listener.handleKeyPress(key);
     }
 
 

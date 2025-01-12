@@ -1,8 +1,17 @@
 cmake_minimum_required(VERSION 3.29)
+include(FetchContent)
 project(Explorer)
 
 set(CMAKE_CXX_STANDARD 20)
 set(RAYGUI_DIR "${CMAKE_SOURCE_DIR}/raygui-master")
+FetchContent_Declare(
+        box2d
+        GIT_REPOSITORY https://github.com/erincatto/box2d.git
+        GIT_TAG main
+        GIT_SHALLOW TRUE
+        GIT_PROGRESS TRUE
+)
+FetchContent_MakeAvailable(box2d)
 
 #include raygui header
 include_directories(${RAYGUI_DIR}/src)
@@ -47,4 +56,4 @@ add_executable(Explorer main.cpp
 )
 
 #target_link_libraries(Explorer raylib ${OPENGL_FRAMEWORK} ${COCOA_FRAMEWORK} ${IOKIT_FRAMEWORK} ${GLUT_FRAMEWORK} ${COREVIDEO_FRAMEWORK})
-target_link_libraries(Explorer raylib ${OPENGL_FRAMEWORK} ${COCOA_FRAMEWORK} ${IOKIT_FRAMEWORK})
+target_link_libraries(Explorer raylib box2d ${OPENGL_FRAMEWORK} ${COCOA_FRAMEWORK} ${IOKIT_FRAMEWORK})

@@ -10,8 +10,6 @@ public:
     virtual bool update(bool onGround);
     virtual Rectangle getBoundingBox();
 
-
-public:
     raylib::Vector2 position{};
     raylib::Vector2 velocity{};
 };

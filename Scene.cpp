@@ -6,15 +6,34 @@
 #include "raylib-cpp-master/include/raylib-cpp.hpp"
 #include "Actor.hpp"
 #include "MainMenuScene.hpp"
+#include "cmake-build-debug/_deps/box2d-src/src/joint.h"
 
-Scene::Scene() {
+#define kPixelsPerMeter 50.0f
+
+Scene::Scene(){
     int sceneHeight = GetScreenHeight();
     groundYPos = (3 * sceneHeight) / 4;
     gravity = 0.5f;
     exit = false;
+
+
+
+    //Set up the worldId
+    b2WorldDef worldDef = b2DefaultWorldDef();
+    worldDef.gravity.y =  9.81f * kPixelsPerMeter;
+
+    b2WorldId worldId = b2CreateWorld(&worldDef);
+    this->worldId = worldId;
+
+    //Set up the scale factor of this world
+    b2SetLengthUnitsPerMeter(kPixelsPerMeter);
+
+    // set the debug
+    debugFlags = 0;
 }
 
 Scene::~Scene() {
+
 }
 
 void Scene::loadResources() {
@@ -105,6 +124,16 @@ bool Scene::shouldQuit() {
 void Scene::doExit() {
     exit = true;
 };
+
+void Scene::handleKeyPress(int key) {
+    switch(key) {
+        case '1': {
+            debugFlags = debugFlags ^ DEBUG_SCENE_COLLISION_SHAPES;
+            break;
+        }
+        default:;
+    }
+}
 
 void Scene::setCamera(std::shared_ptr<TrackingCamera2D> &camera) {
     this->camera = camera;

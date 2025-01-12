@@ -32,9 +32,19 @@ void TileMap2DScene::draw() {
 
     drawActors();
 
+    if (debugFlags) {
+        if (debugFlags & DEBUG_SCENE_COLLISION_SHAPES) {
+            auto &currCamera = camera ? *camera : defaultCamera;
+            tileMap->drawCollisionShapes(currCamera, RED);
+        }
+    }
+
+
     if(camera) {
         camera->EndMode();
     }
+
+
 }
 
 shared_ptr<Scene> TileMap2DScene::update() {

@@ -18,3 +18,4 @@ bool Actor::update(bool onGround) {
 Rectangle Actor::getBoundingBox() {
     return Rectangle{position.x, position.y};
 }
+

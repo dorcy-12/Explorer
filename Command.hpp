@@ -11,5 +11,6 @@ public:
     virtual void goNowhere();
     virtual void interact();
     virtual void doExit();
+    virtual void handleKeyPress(int key);
 };
 

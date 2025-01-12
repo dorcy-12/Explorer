@@ -5,7 +5,7 @@ class InputHandler {
 public:
   InputHandler();
   virtual ~InputHandler();
-  void handleInput(Command& command);
+  void handleInput(Command& listener);
 };
 
 

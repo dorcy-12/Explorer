@@ -31,3 +31,5 @@ void Command::interact() {
 void Command::doExit() {
 }
 
+void Command::handleKeyPress(int key) {
+}

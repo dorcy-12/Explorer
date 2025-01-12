@@ -29,14 +29,14 @@ std::shared_ptr<Actor> TrackingCamera2D::getTarget() {
 
 bool TrackingCamera2D::update(bool onGround) {
     if (!targetActor) return true;
-    if(targetActor->velocity.x > 0) {
+    if (targetActor->velocity.x > 0) {
         int screenWidth = GetScreenWidth();
-        targetOffset = raylib::Vector2(screenWidth / 4.0f, 0.0f);
+        targetOffset = raylib::Vector2(screenWidth / 3.0f, 0.0f);
     } else if(targetActor->velocity.x < 0) {
         int screenWidth = GetScreenWidth();
-        targetOffset = -raylib::Vector2(screenWidth / 4.0f, 0.0f);
+        targetOffset = -raylib::Vector2(screenWidth / 3.0f, 0.0f);
     }
-    this->target = Vector2Lerp(this->target, targetActor->position + targetOffset , 0.1f);
+    this->target = Vector2Lerp(this->target, targetActor->position + targetOffset , 0.5f);
 
     return Actor::update(onGround);
 }

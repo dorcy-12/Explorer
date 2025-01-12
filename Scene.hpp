@@ -3,9 +3,27 @@
 #include <list>
 #include "Command.hpp"
 #include "TrackingCamera2D.hpp"
+#include "box2d/box2d.h"
+
 using namespace std;
 
 class Actor;
+
+
+// Show the player avatar's bounding box
+#define DEBUG_PLAYER_BBOX (1 << 0)
+
+// Show the other actor's bouunding boxes
+#define DEBUG_ACTOR_BBOXES (1 << 1)
+
+// Show the scene's grid (e.g., tile-map grid)
+#define DEBUG_SCENE_GRID (1 << 2)
+
+// Show the scene's static collision shapes
+#define DEBUG_SCENE_COLLISION_SHAPES (1 << 3)
+
+// Show the physics debug info
+#define DEBUG_SCENE_PHYSICS (1 << 4)
 
 class Scene : public Command{
 public:
@@ -41,6 +59,7 @@ public:
     void goNowhere()override;
     void interact() override;
     void doExit()   override;
+    void handleKeyPress(int key) override;
 
 protected:
 
@@ -53,12 +72,17 @@ protected:
          */
     std::shared_ptr<TrackingCamera2D> camera;
 
+    /** Flags for debugging (can draw debug info to screen or print to the log).
+     */
+    unsigned debugFlags;
+
     int groundYPos;
 
     float gravity;
 
     bool exit;
 
+    b2WorldId worldId;
 };
 
 
