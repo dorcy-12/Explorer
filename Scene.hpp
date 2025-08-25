@@ -4,6 +4,7 @@
 #include "Command.hpp"
 #include "TrackingCamera2D.hpp"
 #include "box2d/box2d.h"
+#include "cmake-build-debug/_deps/box2d-src/include/box2d/id.h"
 
 using namespace std;
 

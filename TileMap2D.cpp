@@ -6,7 +6,7 @@
 #include "string"
 #include "TileMapLoader.hpp"
 #include "box2d/box2d.h"
-#include "cmake-build-debug/_deps/box2d-src/src/world.h"
+//#include "cmake-build-debug/_deps/box2d-src/src/world.h"
 
 using namespace std;
 using namespace tson;
@@ -183,13 +183,13 @@ void TileMap2D::generatePhysicsObjects(b2WorldId worldId) {
 
         auto &layer = tileLayers[groundLayerIdx];
         auto layerOffsetTson = layer.getOffset();
-        b2Vec2 layerOffset(layerOffsetTson.x, layerOffsetTson.y);
+        b2Vec2 layerOffset =  {layerOffsetTson.x, layerOffsetTson.y};
 
         if(layer.getType() == LayerType::TileLayer) {
             for (auto& [pos, tileObject] : layer.getTileObjects()) {
                 tson::Tile* tile = tileObject.getTile();
                 auto tilePos = tileObject.getPosition();
-                b2Vec2 tileOffset = b2Vec2(tilePos.x , tilePos.y) + layerOffset;
+                b2Vec2 tileOffset = b2Vec2{tilePos.x , tilePos.y} + layerOffset;
 
                 auto tileObjects = tile->getObjectgroup();
                 auto collisionShapes = tileObjects.getObjects();
@@ -197,7 +197,7 @@ void TileMap2D::generatePhysicsObjects(b2WorldId worldId) {
                     b2BodyDef bodyDef = b2DefaultBodyDef();
                     bodyDef.type = b2_staticBody;
                     auto shape = collisionShape.getPosition();
-                    auto shapePos = b2Vec2(static_cast<float>(shape.x), static_cast<float>(shape.y) ) + tileOffset;
+                    auto shapePos = b2Vec2{static_cast<float>(shape.x), static_cast<float>(shape.y) } + tileOffset;
                     bodyDef.position = {shapePos.x, shapePos.y};
                     b2BodyId bodyId = b2CreateBody(worldId, &bodyDef);
 
@@ -225,7 +225,7 @@ void TileMap2D::generatePhysicsObjects(b2WorldId worldId) {
 
                             b2ShapeDef rectShapeDef = b2DefaultShapeDef();
                             rectShapeDef.density=1.0f;
-                            rectShapeDef.friction= 0.3f;
+                            rectShapeDef.material.friction= 0.3f;
 
                             b2CreatePolygonShape(bodyId,&rectShapeDef, &rectangle);
 
