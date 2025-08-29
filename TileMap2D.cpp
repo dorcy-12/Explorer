@@ -169,7 +169,7 @@ void TileMap2D::drawImageLayer(Layer &layer, const raylib::Camera2D &camera, con
             repeatX ? GetScreenWidth() * scale  : texWidth,
             repeatY ? GetScreenHeight() * scale : texHeight);
         raylib::Vector2 origin = raylib::Vector2(0,0);
-        texture->DrawTiled(sourceRec, destRec, origin);
+        texture->Draw(sourceRec, destRec, origin); // raylib::DrawTexturePro()
     } else {
         texture->Draw(offset, tint);
     }
