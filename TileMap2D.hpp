@@ -1,7 +1,7 @@
 #pragma once
 
 
-#include "raylib-cpp-master/include/raylib-cpp.hpp"
+#include "raylib-cpp.hpp"
 #include "tileson.hpp"
 #include <unordered_map>
 #include "box2d/box2d.h"

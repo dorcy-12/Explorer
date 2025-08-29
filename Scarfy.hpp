@@ -1,6 +1,6 @@
 #pragma once
 #include "Actor.hpp"
-#include "raylib-cpp-master/include/raylib-cpp.hpp"
+#include "raylib-cpp.hpp"
 
 
 class Scarfy : public Actor {

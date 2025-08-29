@@ -1,7 +1,7 @@
 #pragma once
 #include "Actor.hpp"
 #include "raylib.h"
-#include "raylib-cpp-master/include/Camera2D.hpp"
+#include "Camera2D.hpp"
 
 /*
  *Tweaked version of the raylib 2Dcamera to follow a target

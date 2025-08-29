@@ -1,6 +1,6 @@
 #pragma once
 #include "Command.hpp"
-#include "raylib-cpp-master/include/raylib-cpp.hpp"
+#include "raylib-cpp.hpp"
 
 class Actor : public Command {
 public:

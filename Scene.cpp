@@ -3,7 +3,7 @@
 //
 
 #include "Scene.hpp"
-#include "raylib-cpp-master/include/raylib-cpp.hpp"
+#include "raylib-cpp.hpp"
 #include "Actor.hpp"
 #include "MainMenuScene.hpp"
 #include "cmake-build-debug/_deps/box2d-src/src/joint.h"

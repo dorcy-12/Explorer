@@ -5,6 +5,7 @@
 #include "TrackingCamera2D.hpp"
 #include "box2d/box2d.h"
 #include "cmake-build-debug/_deps/box2d-src/include/box2d/id.h"
+#include "raylib-cpp.hpp"
 
 using namespace std;
 
