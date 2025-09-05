@@ -9,9 +9,8 @@ class DrawPhysics{
 
 public:
     DrawPhysics();
-
     // Get the b2DebugDraw struct configured with our functions
-    b2DebugDraw GetDebugDraw();
+    [[nodiscard]] b2DebugDraw &GetDebugDraw();
 
     /// Draw a closed polygon provided in CCW order.
     static void DrawPolygonFcn ( const b2Vec2* vertices, int vertexCount, b2HexColor color, void* context );
@@ -52,4 +51,6 @@ private:
     void drawTransform(b2Transform transform);
     void drawPoint(b2Vec2 p, float size, b2HexColor color);
     void drawString(b2Vec2 p, const char* s, b2HexColor color);
+
+    b2DebugDraw debugDrawStruct;
 };

@@ -21,21 +21,21 @@ static inline raylib::Color toRaylib(const b2HexColor color, float alpha = 1.0f)
     return raylib::Color(rgba);
 }
 
-DrawPhysics::DrawPhysics() = default;
+DrawPhysics::DrawPhysics() : debugDrawStruct{
+        .DrawPolygonFcn = DrawPolygonFcn,
+        .DrawSolidPolygonFcn = DrawSolidPolygonFcn ,
+        .DrawCircleFcn = DrawCircleFcn,
+        .DrawSolidCircleFcn = DrawSolidCircleFcn,
+        .DrawSolidCapsuleFcn = DrawSolidCapsuleFcn,
+        .DrawSegmentFcn = DrawSegmentFcn,
+        .DrawTransformFcn = DrawTransformFcn,
+        .DrawPointFcn = DrawPointFcn,
+        .DrawStringFcn = DrawStringFcn,
+        .context = this,
+        }{};
 
-b2DebugDraw DrawPhysics::GetDebugDraw() {
-    const b2DebugDraw debugDraw={
-    .DrawPolygonFcn = DrawPolygonFcn,
-    .DrawSolidPolygonFcn = DrawSolidPolygonFcn ,
-    .DrawCircleFcn = DrawCircleFcn,
-    .DrawSolidCircleFcn = DrawSolidCircleFcn,
-    .DrawSegmentFcn = DrawSegmentFcn,
-    .DrawTransformFcn = DrawTransformFcn,
-    .DrawPointFcn = DrawPointFcn,
-    .DrawStringFcn = DrawStringFcn,
-    .context = this,
-    };
-    return debugDraw;
+b2DebugDraw& DrawPhysics::GetDebugDraw() {
+    return debugDrawStruct;
 }
 
 void DrawPhysics::DrawPolygonFcn(const b2Vec2 *vertices, int vertexCount, b2HexColor color, void *context) {

@@ -52,84 +52,98 @@ build cmake_object_order_depends_target_Explorer: phony || cmake_object_order_de
 build CMakeFiles/Explorer.dir/main.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/main.cpp || cmake_object_order_depends_target_Explorer
   DEP_FILE = CMakeFiles/Explorer.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
-  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raygui -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raylib-cpp/include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/Explorer.dir
   OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
 
 build CMakeFiles/Explorer.dir/InputHandler.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/InputHandler.cpp || cmake_object_order_depends_target_Explorer
   DEP_FILE = CMakeFiles/Explorer.dir/InputHandler.cpp.o.d
   FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
-  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raygui -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raylib-cpp/include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/Explorer.dir
   OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
 
 build CMakeFiles/Explorer.dir/Command.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/Command.cpp || cmake_object_order_depends_target_Explorer
   DEP_FILE = CMakeFiles/Explorer.dir/Command.cpp.o.d
   FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
-  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raygui -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raylib-cpp/include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/Explorer.dir
   OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
 
 build CMakeFiles/Explorer.dir/Scene.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/Scene.cpp || cmake_object_order_depends_target_Explorer
   DEP_FILE = CMakeFiles/Explorer.dir/Scene.cpp.o.d
   FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
-  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raygui -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raylib-cpp/include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/Explorer.dir
   OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
 
 build CMakeFiles/Explorer.dir/Scarfy.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/Scarfy.cpp || cmake_object_order_depends_target_Explorer
   DEP_FILE = CMakeFiles/Explorer.dir/Scarfy.cpp.o.d
   FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
-  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raygui -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raylib-cpp/include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/Explorer.dir
   OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
 
 build CMakeFiles/Explorer.dir/Actor.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/Actor.cpp || cmake_object_order_depends_target_Explorer
   DEP_FILE = CMakeFiles/Explorer.dir/Actor.cpp.o.d
   FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
-  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raygui -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raylib-cpp/include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/Explorer.dir
   OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
 
 build CMakeFiles/Explorer.dir/ScarfyScene.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/ScarfyScene.cpp || cmake_object_order_depends_target_Explorer
   DEP_FILE = CMakeFiles/Explorer.dir/ScarfyScene.cpp.o.d
   FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
-  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raygui -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raylib-cpp/include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/Explorer.dir
   OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
 
 build CMakeFiles/Explorer.dir/MainMenuScene.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/MainMenuScene.cpp || cmake_object_order_depends_target_Explorer
   DEP_FILE = CMakeFiles/Explorer.dir/MainMenuScene.cpp.o.d
   FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
-  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raygui -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raylib-cpp/include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/Explorer.dir
   OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
 
 build CMakeFiles/Explorer.dir/TileMap2DScene.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/TileMap2DScene.cpp || cmake_object_order_depends_target_Explorer
   DEP_FILE = CMakeFiles/Explorer.dir/TileMap2DScene.cpp.o.d
   FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
-  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raygui -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raylib-cpp/include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/Explorer.dir
   OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
 
 build CMakeFiles/Explorer.dir/TileMapLoader.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/TileMapLoader.cpp || cmake_object_order_depends_target_Explorer
   DEP_FILE = CMakeFiles/Explorer.dir/TileMapLoader.cpp.o.d
   FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
-  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raygui -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raylib-cpp/include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/Explorer.dir
   OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
 
 build CMakeFiles/Explorer.dir/TrackingCamera2D.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/TrackingCamera2D.cpp || cmake_object_order_depends_target_Explorer
   DEP_FILE = CMakeFiles/Explorer.dir/TrackingCamera2D.cpp.o.d
   FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
-  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raygui -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raylib-cpp/include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/Explorer.dir
   OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
 
 build CMakeFiles/Explorer.dir/TileMap2D.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/TileMap2D.cpp || cmake_object_order_depends_target_Explorer
   DEP_FILE = CMakeFiles/Explorer.dir/TileMap2D.cpp.o.d
   FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
-  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/raygui-master/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raygui -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raylib-cpp/include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/Explorer.dir
+  OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
+
+build CMakeFiles/Explorer.dir/CharacterActor.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/CharacterActor.cpp || cmake_object_order_depends_target_Explorer
+  DEP_FILE = CMakeFiles/Explorer.dir/CharacterActor.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raygui -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raylib-cpp/include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/Explorer.dir
+  OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
+
+build CMakeFiles/Explorer.dir/DrawPhysics.cpp.o: CXX_COMPILER__Explorer_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/DrawPhysics.cpp || cmake_object_order_depends_target_Explorer
+  DEP_FILE = CMakeFiles/Explorer.dir/DrawPhysics.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raygui -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raylib-cpp/include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/Explorer.dir
   OBJECT_FILE_DIR = CMakeFiles/Explorer.dir
 
@@ -141,7 +155,7 @@ build CMakeFiles/Explorer.dir/TileMap2D.cpp.o: CXX_COMPILER__Explorer_unscanned_
 #############################################
 # Link the executable Explorer
 
-build Explorer: CXX_EXECUTABLE_LINKER__Explorer_Debug CMakeFiles/Explorer.dir/main.cpp.o CMakeFiles/Explorer.dir/InputHandler.cpp.o CMakeFiles/Explorer.dir/Command.cpp.o CMakeFiles/Explorer.dir/Scene.cpp.o CMakeFiles/Explorer.dir/Scarfy.cpp.o CMakeFiles/Explorer.dir/Actor.cpp.o CMakeFiles/Explorer.dir/ScarfyScene.cpp.o CMakeFiles/Explorer.dir/MainMenuScene.cpp.o CMakeFiles/Explorer.dir/TileMap2DScene.cpp.o CMakeFiles/Explorer.dir/TileMapLoader.cpp.o CMakeFiles/Explorer.dir/TrackingCamera2D.cpp.o CMakeFiles/Explorer.dir/TileMap2D.cpp.o | /usr/local/lib/libraylib.dylib _deps/box2d-build/src/libbox2dd.a || _deps/box2d-build/src/libbox2dd.a
+build Explorer: CXX_EXECUTABLE_LINKER__Explorer_Debug CMakeFiles/Explorer.dir/main.cpp.o CMakeFiles/Explorer.dir/InputHandler.cpp.o CMakeFiles/Explorer.dir/Command.cpp.o CMakeFiles/Explorer.dir/Scene.cpp.o CMakeFiles/Explorer.dir/Scarfy.cpp.o CMakeFiles/Explorer.dir/Actor.cpp.o CMakeFiles/Explorer.dir/ScarfyScene.cpp.o CMakeFiles/Explorer.dir/MainMenuScene.cpp.o CMakeFiles/Explorer.dir/TileMap2DScene.cpp.o CMakeFiles/Explorer.dir/TileMapLoader.cpp.o CMakeFiles/Explorer.dir/TrackingCamera2D.cpp.o CMakeFiles/Explorer.dir/TileMap2D.cpp.o CMakeFiles/Explorer.dir/CharacterActor.cpp.o CMakeFiles/Explorer.dir/DrawPhysics.cpp.o | /usr/local/lib/libraylib.dylib _deps/box2d-build/src/libbox2dd.a || _deps/box2d-build/src/libbox2dd.a
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7
   LINK_LIBRARIES = /usr/local/lib/libraylib.dylib  _deps/box2d-build/src/libbox2dd.a  -framework OpenGL  -framework Cocoa  -framework IOKit
   OBJECT_DIR = CMakeFiles/Explorer.dir
@@ -300,265 +314,239 @@ build _deps/box2d-build/install/strip: phony _deps/box2d-build/CMakeFiles/instal
 build cmake_object_order_depends_target_box2d: phony || .
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/aabb.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/aabb.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/aabb.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
+  OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
+  OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
+
+build _deps/box2d-build/src/CMakeFiles/box2d.dir/arena_allocator.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/arena_allocator.c || cmake_object_order_depends_target_box2d
+  DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/arena_allocator.c.o.d
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/array.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/array.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/array.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/bitset.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/bitset.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/bitset.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/body.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/body.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/body.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/broad_phase.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/broad_phase.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/broad_phase.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/constraint_graph.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/constraint_graph.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/constraint_graph.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/contact.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/contact.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/contact.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/contact_solver.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/contact_solver.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/contact_solver.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/core.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/core.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/core.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/distance.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/distance.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/distance.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/distance_joint.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/distance_joint.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/distance_joint.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/dynamic_tree.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/dynamic_tree.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/dynamic_tree.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/geometry.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/geometry.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/geometry.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/hull.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/hull.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/hull.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/id_pool.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/id_pool.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/id_pool.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/island.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/island.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/island.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/joint.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/joint.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/joint.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/manifold.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/manifold.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/manifold.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/math_functions.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/math_functions.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/math_functions.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/motor_joint.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/motor_joint.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/motor_joint.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
-build _deps/box2d-build/src/CMakeFiles/box2d.dir/mouse_joint.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/mouse_joint.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
-  DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/mouse_joint.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+build _deps/box2d-build/src/CMakeFiles/box2d.dir/mover.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/mover.c || cmake_object_order_depends_target_box2d
+  DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/mover.c.o.d
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
+  OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
+  OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
+
+build _deps/box2d-build/src/CMakeFiles/box2d.dir/physics_world.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/physics_world.c || cmake_object_order_depends_target_box2d
+  DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/physics_world.c.o.d
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/prismatic_joint.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/prismatic_joint.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/prismatic_joint.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/revolute_joint.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/revolute_joint.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/revolute_joint.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
+  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
+  OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
+  OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
+
+build _deps/box2d-build/src/CMakeFiles/box2d.dir/sensor.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/sensor.c || cmake_object_order_depends_target_box2d
+  DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/sensor.c.o.d
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/shape.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/shape.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/shape.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/solver.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/solver.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/solver.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/solver_set.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/solver_set.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/solver_set.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
-  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
-  OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
-  OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
-
-build _deps/box2d-build/src/CMakeFiles/box2d.dir/stack_allocator.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/stack_allocator.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
-  DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/stack_allocator.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/table.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/table.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/table.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/timer.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/timer.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/timer.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/types.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/types.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/types.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/weld_joint.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/weld_joint.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/weld_joint.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
 
 build _deps/box2d-build/src/CMakeFiles/box2d.dir/wheel_joint.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/wheel_joint.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
   DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/wheel_joint.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
-  INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
-  OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
-  OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
-
-build _deps/box2d-build/src/CMakeFiles/box2d.dir/world.c.o: C_COMPILER__box2d_unscanned_Debug /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/world.c || cmake_object_order_depends_target_box2d
-  DEFINES = -DBOX2D_ENABLE_SIMD
-  DEP_FILE = _deps/box2d-build/src/CMakeFiles/box2d.dir/world.c.o.d
-  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Werror
+  FLAGS = -g -std=gnu17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Wall -Wextra -pedantic
   INCLUDES = -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src/../include -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src -I/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-src/src
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
@@ -571,7 +559,7 @@ build _deps/box2d-build/src/CMakeFiles/box2d.dir/world.c.o: C_COMPILER__box2d_un
 #############################################
 # Link the static library _deps/box2d-build/src/libbox2dd.a
 
-build _deps/box2d-build/src/libbox2dd.a: C_STATIC_LIBRARY_LINKER__box2d_Debug _deps/box2d-build/src/CMakeFiles/box2d.dir/aabb.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/array.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/bitset.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/body.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/broad_phase.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/constraint_graph.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/contact.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/contact_solver.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/core.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/distance.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/distance_joint.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/dynamic_tree.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/geometry.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/hull.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/id_pool.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/island.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/joint.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/manifold.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/math_functions.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/motor_joint.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/mouse_joint.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/prismatic_joint.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/revolute_joint.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/shape.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/solver.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/solver_set.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/stack_allocator.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/table.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/timer.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/types.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/weld_joint.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/wheel_joint.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/world.c.o
+build _deps/box2d-build/src/libbox2dd.a: C_STATIC_LIBRARY_LINKER__box2d_Debug _deps/box2d-build/src/CMakeFiles/box2d.dir/aabb.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/arena_allocator.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/array.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/bitset.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/body.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/broad_phase.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/constraint_graph.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/contact.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/contact_solver.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/core.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/distance.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/distance_joint.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/dynamic_tree.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/geometry.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/hull.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/id_pool.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/island.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/joint.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/manifold.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/math_functions.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/motor_joint.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/mover.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/physics_world.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/prismatic_joint.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/revolute_joint.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/sensor.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/shape.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/solver.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/solver_set.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/table.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/timer.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/types.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/weld_joint.c.o _deps/box2d-build/src/CMakeFiles/box2d.dir/wheel_joint.c.o
   ARCH_FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = _deps/box2d-build/src/CMakeFiles/box2d.dir
@@ -646,6 +634,146 @@ build _deps/box2d-build/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/
 build _deps/box2d-build/src/install/strip: phony _deps/box2d-build/src/CMakeFiles/install/strip.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/hakizimanaemmanuel/CLionProjects/Explorer/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build ThirdParty/raylib-cpp/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp && /Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build ThirdParty/raylib-cpp/edit_cache: phony ThirdParty/raylib-cpp/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build ThirdParty/raylib-cpp/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp && /Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cmake --regenerate-during-build -S/Users/hakizimanaemmanuel/CLionProjects/Explorer -B/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build ThirdParty/raylib-cpp/rebuild_cache: phony ThirdParty/raylib-cpp/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build ThirdParty/raylib-cpp/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build ThirdParty/raylib-cpp/CMakeFiles/install.util: CUSTOM_COMMAND ThirdParty/raylib-cpp/all
+  COMMAND = cd /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp && /Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build ThirdParty/raylib-cpp/install: phony ThirdParty/raylib-cpp/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build ThirdParty/raylib-cpp/CMakeFiles/install/local.util: CUSTOM_COMMAND ThirdParty/raylib-cpp/all
+  COMMAND = cd /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp && /Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build ThirdParty/raylib-cpp/install/local: phony ThirdParty/raylib-cpp/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build ThirdParty/raylib-cpp/CMakeFiles/install/strip.util: CUSTOM_COMMAND ThirdParty/raylib-cpp/all
+  COMMAND = cd /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp && /Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build ThirdParty/raylib-cpp/install/strip: phony ThirdParty/raylib-cpp/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raylib-cpp/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build ThirdParty/raylib-cpp/include/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp/include && /Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build ThirdParty/raylib-cpp/include/edit_cache: phony ThirdParty/raylib-cpp/include/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build ThirdParty/raylib-cpp/include/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp/include && /Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cmake --regenerate-during-build -S/Users/hakizimanaemmanuel/CLionProjects/Explorer -B/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build ThirdParty/raylib-cpp/include/rebuild_cache: phony ThirdParty/raylib-cpp/include/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build ThirdParty/raylib-cpp/include/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build ThirdParty/raylib-cpp/include/CMakeFiles/install.util: CUSTOM_COMMAND ThirdParty/raylib-cpp/include/all
+  COMMAND = cd /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp/include && /Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build ThirdParty/raylib-cpp/include/install: phony ThirdParty/raylib-cpp/include/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build ThirdParty/raylib-cpp/include/CMakeFiles/install/local.util: CUSTOM_COMMAND ThirdParty/raylib-cpp/include/all
+  COMMAND = cd /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp/include && /Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build ThirdParty/raylib-cpp/include/install/local: phony ThirdParty/raylib-cpp/include/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build ThirdParty/raylib-cpp/include/CMakeFiles/install/strip.util: CUSTOM_COMMAND ThirdParty/raylib-cpp/include/all
+  COMMAND = cd /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp/include && /Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build ThirdParty/raylib-cpp/include/install/strip: phony ThirdParty/raylib-cpp/include/CMakeFiles/install/strip.util
+
+# =============================================================================
 # Target aliases.
 
 build box2d: phony _deps/box2d-build/src/libbox2dd.a
@@ -660,7 +788,21 @@ build libbox2dd.a: phony _deps/box2d-build/src/libbox2dd.a
 #############################################
 # Folder: /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug
 
-build all: phony Explorer _deps/box2d-build/all
+build all: phony Explorer _deps/box2d-build/all ThirdParty/raylib-cpp/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp
+
+build ThirdParty/raylib-cpp/all: phony ThirdParty/raylib-cpp/include/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp/include
+
+build ThirdParty/raylib-cpp/include/all: phony
 
 # =============================================================================
 
@@ -683,14 +825,14 @@ build _deps/box2d-build/src/all: phony _deps/box2d-build/src/libbox2dd.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/ExternalProject/shared_internal_commands.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FetchContent.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FetchContent/CMakeLists.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FindGit.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FindPkgConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/WriteBasicConfigVersionFile.cmake /Users/hakizimanaemmanuel/CLionProjects/Explorer/CMakeLists.txt /usr/local/lib/cmake/raylib/raylib-config-version.cmake /usr/local/lib/cmake/raylib/raylib-config.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake _deps/box2d-src/CMakeLists.txt _deps/box2d-src/src/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/ExternalProject/shared_internal_commands.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FetchContent.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FetchContent/CMakeLists.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FindGit.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FindPkgConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/WriteBasicConfigVersionFile.cmake /Users/hakizimanaemmanuel/CLionProjects/Explorer/CMakeLists.txt /Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raylib-cpp/CMakeLists.txt /Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raylib-cpp/include/CMakeLists.txt /usr/local/lib/cmake/raylib/raylib-config-version.cmake /usr/local/lib/cmake/raylib/raylib-config.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake _deps/box2d-src/CMakeLists.txt _deps/box2d-src/src/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/ExternalProject/shared_internal_commands.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FetchContent.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FetchContent/CMakeLists.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FindGit.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FindPkgConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/WriteBasicConfigVersionFile.cmake /Users/hakizimanaemmanuel/CLionProjects/Explorer/CMakeLists.txt /usr/local/lib/cmake/raylib/raylib-config-version.cmake /usr/local/lib/cmake/raylib/raylib-config.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake _deps/box2d-src/CMakeLists.txt _deps/box2d-src/src/CMakeLists.txt: phony
+build /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/ExternalProject/shared_internal_commands.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FetchContent.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FetchContent/CMakeLists.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FindGit.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/FindPkgConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.29/Modules/WriteBasicConfigVersionFile.cmake /Users/hakizimanaemmanuel/CLionProjects/Explorer/CMakeLists.txt /Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raylib-cpp/CMakeLists.txt /Users/hakizimanaemmanuel/CLionProjects/Explorer/ThirdParty/raylib-cpp/include/CMakeLists.txt /usr/local/lib/cmake/raylib/raylib-config-version.cmake /usr/local/lib/cmake/raylib/raylib-config.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake _deps/box2d-src/CMakeLists.txt _deps/box2d-src/src/CMakeLists.txt: phony
 
 
 #############################################
