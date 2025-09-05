@@ -23,6 +23,9 @@ public:
     /// Draw a circle.
     static void DrawCircleFcn ( b2Vec2 center, float radius, b2HexColor color, void* context );
 
+    /// Draw a solid capsule.
+    static void DrawSolidCapsuleFcn ( b2Vec2 p1, b2Vec2 p2, float radius, b2HexColor color, void* context );
+
     /// Draw a solid circle.
     static void DrawSolidCircleFcn ( b2Transform transform, float radius, b2HexColor color, void* context );
 
@@ -35,13 +38,18 @@ public:
     /// Draw a point.
     static void DrawPointFcn ( b2Vec2 p, float size, b2HexColor color, void* context );
 
+    // Draw a string in world space
+    static void DrawStringFcn( b2Vec2 p, const char* s, b2HexColor color, void* context );
+
 private:
     // Instance methods that do the actual work
     void drawPolygon(const b2Vec2* vertices, int vertexCount, b2HexColor color);
     void drawSolidPolygon(b2Transform transform, const b2Vec2* vertices, int vertexCount, float radius, b2HexColor color);
     void drawCircle(b2Vec2 center, float radius, b2HexColor color);
     void drawSolidCircle(b2Transform transform, float radius, b2HexColor color);
+    void drawSolidCapsule(b2Vec2 p1, b2Vec2 p2, float radius, b2HexColor color);
     void drawSegment(b2Vec2 p1, b2Vec2 p2, b2HexColor color);
     void drawTransform(b2Transform transform);
     void drawPoint(b2Vec2 p, float size, b2HexColor color);
+    void drawString(b2Vec2 p, const char* s, b2HexColor color);
 };

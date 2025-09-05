@@ -21,8 +21,7 @@ static inline raylib::Color toRaylib(const b2HexColor color, float alpha = 1.0f)
     return raylib::Color(rgba);
 }
 
-DrawPhysics::DrawPhysics() {
-}
+DrawPhysics::DrawPhysics() = default;
 
 b2DebugDraw DrawPhysics::GetDebugDraw() {
     const b2DebugDraw debugDraw={
@@ -56,6 +55,10 @@ void DrawPhysics::DrawSolidCircleFcn(b2Transform transform, float radius, b2HexC
     static_cast<DrawPhysics*>(context)->drawSolidCircle(transform, radius , color);
 }
 
+void DrawPhysics::DrawSolidCapsuleFcn(b2Vec2 p1, b2Vec2 p2, float radius, b2HexColor color, void *context) {
+    static_cast<DrawPhysics*>(context)->drawSolidCapsule(p1, p2, radius , color);
+}
+
 void DrawPhysics::DrawSegmentFcn(b2Vec2 p1, b2Vec2 p2, b2HexColor color, void *context) {
     static_cast<DrawPhysics*>(context)->drawSegment(p1, p2, color);
 }
@@ -67,6 +70,14 @@ void DrawPhysics::DrawTransformFcn(b2Transform transform, void *context) {
 void DrawPhysics::DrawPointFcn(b2Vec2 p, float size, b2HexColor color, void *context) {
     static_cast<DrawPhysics*>(context)->drawPoint(p, size, color);
 }
+
+void DrawPhysics::DrawStringFcn(b2Vec2 p, const char *s, b2HexColor color, void *context) {
+    static_cast<DrawPhysics*>(context)->drawString(p,s,color);
+}
+
+
+
+
 
 // Implementations
 
@@ -122,6 +133,19 @@ void DrawPhysics::drawSolidCircle(b2Transform transform, float radius, b2HexColo
 
 }
 
+void DrawPhysics::drawSolidCapsule(b2Vec2 p1, b2Vec2 p2, float radius, b2HexColor color) {
+    const raylib::Color rColor = toRaylib(color);
+    const auto start = reinterpret_cast<Vector2&>(p1);
+    const auto end =  reinterpret_cast<Vector2&>(p1);
+
+    // Draw the rectangular body
+    DrawLineEx(start, end, radius * 2, rColor);
+
+    // Draw the circular end caps to make it a proper capsule
+    DrawCircleV(start, radius, rColor);
+    DrawCircleV(end, radius, rColor);
+}
+
 void DrawPhysics::drawSegment(b2Vec2 p1, b2Vec2 p2, b2HexColor color) {
     const raylib::Color rColor = toRaylib(color);
     DrawLineEx(reinterpret_cast<Vector2&>(p1),reinterpret_cast<Vector2&>(p2), LINE_THICKNESS, rColor );
@@ -145,7 +169,12 @@ void DrawPhysics::drawPoint(b2Vec2 p, float size, b2HexColor color) {
     DrawCircleV(reinterpret_cast<Vector2&>(p), radius, rColor);
 }
 
+void DrawPhysics::drawString(b2Vec2 p, const char *s, b2HexColor color) {
+    const raylib::Color rColor = toRaylib(color);
+    const auto [x,y] = p;
+    DrawTextEx(GetFontDefault(), s, {x,y}, 12.0f, 1.0f, rColor);
 
+}
 
 
 
