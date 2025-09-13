@@ -34,8 +34,8 @@ DrawPhysics::DrawPhysics() : debugDrawStruct{
         .context = this,
         }{};
 
-b2DebugDraw& DrawPhysics::GetDebugDraw() {
-    return debugDrawStruct;
+b2DebugDraw* DrawPhysics::GetDebugDraw() {
+    return &debugDrawStruct;
 }
 
 void DrawPhysics::DrawPolygonFcn(const b2Vec2 *vertices, int vertexCount, b2HexColor color, void *context) {
@@ -93,17 +93,18 @@ void DrawPhysics::drawSolidPolygon(b2Transform transform, const b2Vec2 *vertices
     // rlDisableBackfaceCulling();
     raylib::Color rColor = toRaylib(color, ALPHA_VAL);
 
-    b2Vec2 world_vertices[vertexCount];
+    std::vector<b2Vec2> verts(vertexCount);
     for (int i = 0; i < vertexCount; i++) {
-        b2Vec2 p = b2TransformPoint(transform, vertices[i]);
-        world_vertices[i] = p;  //TODO: Check if i need to reverse the y.coordinate for Raylib
+        verts[i] = b2TransformPoint(transform, vertices[i]);
     }
+    std::reverse(verts.begin(), verts.end());// TriangleFan actually takes CW vertices without a center contrary to documentation.
+
 
     // Draw filled polygon using reinterpret_cast
-    const auto* rVertices = reinterpret_cast<const Vector2*>(world_vertices);
+    const auto* rVertices = reinterpret_cast<const Vector2*>(verts.data());
     DrawTriangleFan(rVertices, vertexCount, rColor);
 
-    drawPolygon(world_vertices, vertexCount, color);
+    drawPolygon(verts.data(), vertexCount, color);
 }
 
 void DrawPhysics::drawCircle(b2Vec2 center, float radius, b2HexColor color) {
@@ -136,7 +137,7 @@ void DrawPhysics::drawSolidCircle(b2Transform transform, float radius, b2HexColo
 void DrawPhysics::drawSolidCapsule(b2Vec2 p1, b2Vec2 p2, float radius, b2HexColor color) {
     const raylib::Color rColor = toRaylib(color);
     const auto start = reinterpret_cast<Vector2&>(p1);
-    const auto end =  reinterpret_cast<Vector2&>(p1);
+    const auto end =  reinterpret_cast<Vector2&>(p2);
 
     // Draw the rectangular body
     DrawLineEx(start, end, radius * 2, rColor);

@@ -10,7 +10,7 @@ class DrawPhysics{
 public:
     DrawPhysics();
     // Get the b2DebugDraw struct configured with our functions
-    [[nodiscard]] b2DebugDraw &GetDebugDraw();
+    [[nodiscard]] b2DebugDraw* GetDebugDraw();
 
     /// Draw a closed polygon provided in CCW order.
     static void DrawPolygonFcn ( const b2Vec2* vertices, int vertexCount, b2HexColor color, void* context );
