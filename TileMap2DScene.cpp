@@ -10,8 +10,8 @@ const static TrackingCamera2D defaultCamera;
 TileMap2DScene::TileMap2DScene() {
 }
 
-TileMap2DScene::TileMap2DScene(const std::string &fileName):
-    tileMap(std::make_shared<TileMap2D>(fileName)){
+TileMap2DScene::TileMap2DScene(const std::string &filename):
+    tileMap(std::make_shared<TileMap2D>(filename)){
 }
 
 TileMap2DScene::~TileMap2DScene() {
@@ -19,6 +19,9 @@ TileMap2DScene::~TileMap2DScene() {
 }
 
 void TileMap2DScene::draw() {
+    ClearBackground(RAYWHITE);
+
+    const auto &camera = getCamera();
 
     if(camera) {
         camera->BeginMode();
@@ -34,27 +37,30 @@ void TileMap2DScene::draw() {
 
     if (debugFlags) {
         if (debugFlags & DEBUG_SCENE_COLLISION_SHAPES) {
-            auto &currCamera = camera ? *camera : defaultCamera;
-            tileMap->drawCollisionShapes(currCamera, RED);
+            if (tileMap) {
+                auto &currCamera = camera ? *camera : defaultCamera;
+                tileMap->drawCollisionShapes(currCamera, RED)
+            }
         }
+        if ((debugFlags & DEBUG_SCENE_GRID) != 0) {
+            if (tileMap) {
+                tileMap->drawGrid(currCamera, DARKGRAY);
+            }
+        }
+        drawDebug();
     }
-
 
     if(camera) {
         camera->EndMode();
     }
-
-
 }
 
 shared_ptr<Scene> TileMap2DScene::update() {
-    float elapsedTime = GetFrameTime();
+    const float elapsedTime = GetFrameTime();
     if(tileMap) {
         tileMap->updateAnimations(elapsedTime);
     }
-    // ##### FIXME! ###### Handle collisions?
-
-    return Scene::update();
+    return Scene::update(elapsedTime);
 }
 
 raylib::Vector2 TileMap2DScene::get2DSize() const {
