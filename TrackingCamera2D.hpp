@@ -20,7 +20,7 @@ public:
 
     std::shared_ptr<Actor> getTarget();
 
-    bool update (bool onGround) override;
+    virtual bool update (float elapsedTime) ;
 
 private:
     std::shared_ptr<Actor> targetActor;

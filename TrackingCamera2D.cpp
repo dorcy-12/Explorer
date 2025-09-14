@@ -4,6 +4,9 @@
 
 #include "TrackingCamera2D.hpp"
 
+static inline raylib::Vector2 calcAbsTargetOffset(const int screenWidth, const float zoom) {
+    return {static_cast<float>(screenWidth) / (6.0f * zoom), 0.0f};
+}
 
 TrackingCamera2D::TrackingCamera2D(const TrackingCamera2D &camera):
         raylib::Camera2D(camera) {
@@ -27,16 +30,27 @@ std::shared_ptr<Actor> TrackingCamera2D::getTarget() {
     return targetActor;
 }
 
-bool TrackingCamera2D::update(bool onGround) {
+bool TrackingCamera2D::update(float elapsedTime) {
     if (!targetActor) return true;
-    if (targetActor->velocity.x > 0) {
-        int screenWidth = GetScreenWidth();
-        targetOffset = raylib::Vector2(screenWidth / 3.0f, 0.0f);
-    } else if(targetActor->velocity.x < 0) {
-        int screenWidth = GetScreenWidth();
-        targetOffset = -raylib::Vector2(screenWidth / 3.0f, 0.0f);
-    }
-    this->target = Vector2Lerp(this->target, targetActor->position + targetOffset , 0.5f);
 
-    return Actor::update(onGround);
+    float zoom = GetZoom();
+    const auto &[x, y] = targetActor->getVelocity();
+    const raylib::Vector2 targetVelocity = {x, y};
+
+    const auto &[i, j] = targetActor->getPosition();
+    const raylib::Vector2 targetPosition = {i, j};
+
+    int screenWidth = GetScreenWidth();
+
+    if (targetVelocity.x > 0) {
+        targetOffset = -calcAbsTargetOffset(screenWidth, zoom);
+    } else if(targetVelocity.x < 0) {
+        targetOffset = calcAbsTargetOffset(screenWidth, zoom);
+    }
+    // Vector2Lerp is linear interpolation mechanism to make the movements of the camera less harsh
+    // Vector2Lerp(start, end, factor); it moves from the start to the end by doing camera_pos = start +(end−start)*factor
+    // otherwise changing camera target (as we are doing above) would happen instantaneously (too harsh)
+    this->target = Vector2Lerp(this->target, targetPosition + targetOffset , 0.5f);
+
+    return true;
 }
