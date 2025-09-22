@@ -51,6 +51,8 @@ add_executable(Explorer main.cpp
         Common.hpp
         CharacterActor.hpp
         CharacterActor.cpp
+        DrawPhysics.hpp
+        DrawPhysics.cpp
 )
 # Adding raylib-cpp (raylib c++ wrapper)
 add_subdirectory(${CMAKE_SOURCE_DIR}/ThirdParty/raylib-cpp)

@@ -8,19 +8,22 @@ static inline raylib::Vector2 calcAbsTargetOffset(const int screenWidth, const f
     return {static_cast<float>(screenWidth) / (6.0f * zoom), 0.0f};
 }
 
-TrackingCamera2D::TrackingCamera2D(const TrackingCamera2D &camera):
-        raylib::Camera2D(camera) {
-    this->targetActor = targetActor;
-}
-
 TrackingCamera2D::TrackingCamera2D() {
+    init();
 }
 
-TrackingCamera2D::TrackingCamera2D(Vector2 offset, Vector2 target, float rotation, float zoom):
-                    raylib::Camera2D(offset, target, rotation, zoom) {
-    targetOffset = ::Vector2{0.0f, 0.0f};
+TrackingCamera2D::TrackingCamera2D(Vector2 offset, Vector2 target, float rotation, float zoom) :
+    raylib::Camera2D(offset, target, rotation, zoom) {
+    position = target;
 
+    init();
 }
+
+void TrackingCamera2D::init() {
+    const int screenWidth = GetScreenWidth();
+    targetOffset = -calcAbsTargetOffset(screenWidth, zoom);
+}
+
 
 void TrackingCamera2D::setTarget(const std::shared_ptr<Actor> &targetActor) {
     this->targetActor = targetActor;
@@ -40,7 +43,7 @@ bool TrackingCamera2D::update(float elapsedTime) {
     const auto &[i, j] = targetActor->getPosition();
     const raylib::Vector2 targetPosition = {i, j};
 
-    int screenWidth = GetScreenWidth();
+    const int screenWidth = GetScreenWidth();
 
     if (targetVelocity.x > 0) {
         targetOffset = -calcAbsTargetOffset(screenWidth, zoom);

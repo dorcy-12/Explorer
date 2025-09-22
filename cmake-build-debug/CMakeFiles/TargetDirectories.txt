@@ -18,3 +18,15 @@
 /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src/CMakeFiles/install.dir
 /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src/CMakeFiles/install/local.dir
 /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/_deps/box2d-build/src/CMakeFiles/install/strip.dir
+/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp/CMakeFiles/edit_cache.dir
+/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp/CMakeFiles/rebuild_cache.dir
+/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp/CMakeFiles/list_install_components.dir
+/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp/CMakeFiles/install.dir
+/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp/CMakeFiles/install/local.dir
+/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp/CMakeFiles/install/strip.dir
+/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp/include/CMakeFiles/edit_cache.dir
+/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp/include/CMakeFiles/rebuild_cache.dir
+/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp/include/CMakeFiles/list_install_components.dir
+/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp/include/CMakeFiles/install.dir
+/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp/include/CMakeFiles/install/local.dir
+/Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug/ThirdParty/raylib-cpp/include/CMakeFiles/install/strip.dir

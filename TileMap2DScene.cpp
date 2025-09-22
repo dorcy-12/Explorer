@@ -28,7 +28,7 @@ void TileMap2DScene::draw() {
     }
 
     if(tileMap) {
-        auto currCamera = camera ? *camera : defaultCamera;
+        auto &currCamera = camera ? *camera : defaultCamera;
         tileMap->draw(currCamera, ::RAYWHITE);
     }
 
@@ -39,11 +39,12 @@ void TileMap2DScene::draw() {
         if (debugFlags & DEBUG_SCENE_COLLISION_SHAPES) {
             if (tileMap) {
                 auto &currCamera = camera ? *camera : defaultCamera;
-                tileMap->drawCollisionShapes(currCamera, RED)
+                tileMap->drawCollisionShapes(currCamera, RED);
             }
         }
         if ((debugFlags & DEBUG_SCENE_GRID) != 0) {
             if (tileMap) {
+                auto &currCamera = camera ? *camera : defaultCamera;
                 tileMap->drawGrid(currCamera, DARKGRAY);
             }
         }
@@ -55,8 +56,7 @@ void TileMap2DScene::draw() {
     }
 }
 
-shared_ptr<Scene> TileMap2DScene::update() {
-    const float elapsedTime = GetFrameTime();
+shared_ptr<Scene> TileMap2DScene::update(float elapsedTime) {
     if(tileMap) {
         tileMap->updateAnimations(elapsedTime);
     }

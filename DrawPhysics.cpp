@@ -7,7 +7,7 @@
 #include "raylib-cpp.hpp"
 
 
-#define LINE_THICKNESS 3.0f
+#define LINE_THICKNESS 10.0f
 #define ALPHA_VAL 0.5f
 
 // Helper function to turn b2HexColor to raylib::Color
@@ -82,6 +82,7 @@ void DrawPhysics::DrawStringFcn(b2Vec2 p, const char *s, b2HexColor color, void 
 // Implementations
 
 void DrawPhysics::drawPolygon(const b2Vec2 *vertices, int vertexCount, b2HexColor color) {
+    rlDisableBackfaceCulling();
     raylib::Color rColor = toRaylib(color);
     const auto *rVertices = reinterpret_cast<const Vector2*>(vertices);
     DrawLineStrip(rVertices, vertexCount, rColor);
@@ -90,16 +91,15 @@ void DrawPhysics::drawPolygon(const b2Vec2 *vertices, int vertexCount, b2HexColo
 
 void DrawPhysics::drawSolidPolygon(b2Transform transform, const b2Vec2 *vertices, int vertexCount, float radius,
     b2HexColor color) {
-    // rlDisableBackfaceCulling();
+    rlDisableBackfaceCulling();
     raylib::Color rColor = toRaylib(color, ALPHA_VAL);
 
-    std::vector<b2Vec2> verts(vertexCount);
-    for (int i = 0; i < vertexCount; i++) {
-        verts[i] = b2TransformPoint(transform, vertices[i]);
+    std::vector<b2Vec2> verts;
+    verts.reserve(vertexCount);
+    for (int i = vertexCount - 1; i >=0; --i) { // TriangleFan actually takes CW vertices without a center contrary to documentation.
+        b2Vec2 p = b2TransformPoint(transform, vertices[i]);
+        verts.push_back(p);
     }
-    std::reverse(verts.begin(), verts.end());// TriangleFan actually takes CW vertices without a center contrary to documentation.
-
-
     // Draw filled polygon using reinterpret_cast
     const auto* rVertices = reinterpret_cast<const Vector2*>(verts.data());
     DrawTriangleFan(rVertices, vertexCount, rColor);
@@ -108,6 +108,7 @@ void DrawPhysics::drawSolidPolygon(b2Transform transform, const b2Vec2 *vertices
 }
 
 void DrawPhysics::drawCircle(b2Vec2 center, float radius, b2HexColor color) {
+    rlDisableBackfaceCulling();
     const raylib::Color rColor = toRaylib(color);
 
     // DrawCircleLines() uses integer coordinates, which isn't accurate with world coordinates, so...
@@ -116,6 +117,7 @@ void DrawPhysics::drawCircle(b2Vec2 center, float radius, b2HexColor color) {
 }
 
 void DrawPhysics::drawSolidCircle(b2Transform transform, float radius, b2HexColor color) {
+    rlDisableBackfaceCulling();
     const raylib::Color rColor = toRaylib(color, ALPHA_VAL);
 
     const b2Vec2 center = transform.p;
@@ -135,7 +137,8 @@ void DrawPhysics::drawSolidCircle(b2Transform transform, float radius, b2HexColo
 }
 
 void DrawPhysics::drawSolidCapsule(b2Vec2 p1, b2Vec2 p2, float radius, b2HexColor color) {
-    const raylib::Color rColor = toRaylib(color);
+    rlDisableBackfaceCulling();
+    const raylib::Color rColor = toRaylib(color, ALPHA_VAL);
     const auto start = reinterpret_cast<Vector2&>(p1);
     const auto end =  reinterpret_cast<Vector2&>(p2);
 
@@ -148,11 +151,13 @@ void DrawPhysics::drawSolidCapsule(b2Vec2 p1, b2Vec2 p2, float radius, b2HexColo
 }
 
 void DrawPhysics::drawSegment(b2Vec2 p1, b2Vec2 p2, b2HexColor color) {
+    rlDisableBackfaceCulling();
     const raylib::Color rColor = toRaylib(color);
     DrawLineEx(reinterpret_cast<Vector2&>(p1),reinterpret_cast<Vector2&>(p2), LINE_THICKNESS, rColor );
 }
 
 void DrawPhysics::drawTransform(b2Transform transform) {
+    rlDisableBackfaceCulling();
     constexpr float lineLength = 15.0f;
     const auto origin = reinterpret_cast<Vector2&>(transform.p);
     const b2Vec2 axisX = b2Rot_GetXAxis(transform.q);
@@ -165,12 +170,14 @@ void DrawPhysics::drawTransform(b2Transform transform) {
 }
 
 void DrawPhysics::drawPoint(b2Vec2 p, float size, b2HexColor color) {
+    rlDisableBackfaceCulling();
     const raylib::Color rColor = toRaylib(color);
     constexpr float radius = 2.0f;
     DrawCircleV(reinterpret_cast<Vector2&>(p), radius, rColor);
 }
 
 void DrawPhysics::drawString(b2Vec2 p, const char *s, b2HexColor color) {
+    rlDisableBackfaceCulling();
     const raylib::Color rColor = toRaylib(color);
     const auto [x,y] = p;
     DrawTextEx(GetFontDefault(), s, {x,y}, 12.0f, 1.0f, rColor);

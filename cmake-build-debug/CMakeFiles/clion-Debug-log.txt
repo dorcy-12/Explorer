@@ -4,6 +4,7 @@
 -- CMake system name: Darwin
 -- CMake host system processor: x86_64
 -- Box2D on Apple
--- Configuring done (10.1s)
--- Generating done (0.0s)
+-- raylib-cpp C++ modules support is disabled. Enable with -BUILD_RAYLIB_CPP_MODULES=ON
+-- Configuring done (5.9s)
+-- Generating done (0.3s)
 -- Build files have been written to: /Users/hakizimanaemmanuel/CLionProjects/Explorer/cmake-build-debug

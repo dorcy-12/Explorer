@@ -16,7 +16,7 @@ public:
 
     void draw() override;
 
-    shared_ptr<Scene> update() override;
+    shared_ptr<Scene> update(float elapsedTime) override;
 
     raylib::Vector2 get2DSize() const override;
 

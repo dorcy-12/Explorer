@@ -1,0 +1,534 @@
+{ "columns":0,
+ "grid":
+    {
+     "height":1,
+     "orientation":"orthogonal",
+     "width":1
+    },
+ "margin":0,
+ "name":"props",
+ "spacing":0,
+ "tilecount":86,
+ "tiledversion":"1.11.0",
+ "tileheight":480,
+ "tiles":[
+        {
+         "id":0,
+         "image":"Buildings n Props\/Village Set_Environment - Wooden Crate.png",
+         "imageheight":128,
+         "imagewidth":129
+        }, 
+        {
+         "id":1,
+         "image":"Buildings n Props\/Village Set_Environment - Wooden Barrel.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":2,
+         "image":"Buildings n Props\/Village Set_Environment - Well.png",
+         "imageheight":256,
+         "imagewidth":256
+        }, 
+        {
+         "id":3,
+         "image":"Buildings n Props\/Village Set_Environment - Tree 03.png",
+         "imageheight":480,
+         "imagewidth":480
+        }, 
+        {
+         "id":4,
+         "image":"Buildings n Props\/Village Set_Environment - Tree 02.png",
+         "imageheight":480,
+         "imagewidth":480
+        }, 
+        {
+         "id":5,
+         "image":"Buildings n Props\/Village Set_Environment - Tree 01.png",
+         "imageheight":480,
+         "imagewidth":480
+        }, 
+        {
+         "id":6,
+         "image":"Buildings n Props\/Village Set_Environment - Sign 03.png",
+         "imageheight":160,
+         "imagewidth":160
+        }, 
+        {
+         "id":7,
+         "image":"Buildings n Props\/Village Set_Environment - Sign 01.png",
+         "imageheight":160,
+         "imagewidth":160
+        }, 
+        {
+         "id":8,
+         "image":"Buildings n Props\/Village Set_Environment - Sack 02.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":9,
+         "image":"Buildings n Props\/Village Set_Environment - Sack 01.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":10,
+         "image":"Buildings n Props\/Village Set_Environment - Rock 08.png",
+         "imageheight":64,
+         "imagewidth":64
+        }, 
+        {
+         "id":11,
+         "image":"Buildings n Props\/Village Set_Environment - Rock 07.png",
+         "imageheight":64,
+         "imagewidth":64
+        }, 
+        {
+         "id":12,
+         "image":"Buildings n Props\/Village Set_Environment - Rock 06.png",
+         "imageheight":64,
+         "imagewidth":64
+        }, 
+        {
+         "id":13,
+         "image":"Buildings n Props\/Village Set_Environment - Rock 05.png",
+         "imageheight":64,
+         "imagewidth":64
+        }, 
+        {
+         "id":14,
+         "image":"Buildings n Props\/Village Set_Environment - Rock 04.png",
+         "imageheight":64,
+         "imagewidth":128
+        }, 
+        {
+         "id":15,
+         "image":"Buildings n Props\/Village Set_Environment - Rock 03.png",
+         "imageheight":64,
+         "imagewidth":128
+        }, 
+        {
+         "id":16,
+         "image":"Buildings n Props\/Village Set_Environment - Rock 02.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":17,
+         "image":"Buildings n Props\/Village Set_Environment - Rock 01.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":18,
+         "image":"Buildings n Props\/Village Set_Environment - Quest Board.png",
+         "imageheight":256,
+         "imagewidth":256
+        }, 
+        {
+         "id":19,
+         "image":"Buildings n Props\/Village Set_Environment - Plant 03.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":20,
+         "image":"Buildings n Props\/Village Set_Environment - Plant 02.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":21,
+         "image":"Buildings n Props\/Village Set_Environment - Plant 01.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":22,
+         "image":"Buildings n Props\/Village Set_Environment - Grass_03     .png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":23,
+         "image":"Buildings n Props\/Village Set_Environment - Grass_01-23.png",
+         "imageheight":64,
+         "imagewidth":128
+        }, 
+        {
+         "id":24,
+         "image":"Buildings n Props\/Village Set_Environment - Grass_01-22.png",
+         "imageheight":64,
+         "imagewidth":128
+        }, 
+        {
+         "id":25,
+         "image":"Buildings n Props\/Village Set_Environment - Fence 06.png",
+         "imageheight":160,
+         "imagewidth":160
+        }, 
+        {
+         "id":26,
+         "image":"Buildings n Props\/Village Set_Environment - Fence 04.png",
+         "imageheight":160,
+         "imagewidth":160
+        }, 
+        {
+         "id":27,
+         "image":"Buildings n Props\/Village Set_Environment - Fence 03.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":28,
+         "image":"Buildings n Props\/Village Set_Environment - Fence 02.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":29,
+         "image":"Buildings n Props\/Village Set_Environment - Fence 01.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":30,
+         "image":"Buildings n Props\/Village Set_Environment - Drying Cloth 02.png",
+         "imageheight":256,
+         "imagewidth":256
+        }, 
+        {
+         "id":31,
+         "image":"Buildings n Props\/Village Set_Environment - Drying Cloth 01.png",
+         "imageheight":256,
+         "imagewidth":256
+        }, 
+        {
+         "id":32,
+         "image":"Buildings n Props\/Village Set_Environment - Divine Statue.png",
+         "imageheight":320,
+         "imagewidth":320
+        }, 
+        {
+         "id":33,
+         "image":"Buildings n Props\/Village Set_Environment - Bench.png",
+         "imageheight":256,
+         "imagewidth":256
+        }, 
+        {
+         "id":34,
+         "image":"Buildings n Props\/Village Set_Environment - Banner 03.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":35,
+         "image":"Buildings n Props\/Village Set_Environment - Banner 02.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":36,
+         "image":"Buildings n Props\/Village Set_Environment - Banner 01.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":37,
+         "image":"Buildings n Props\/Village Set_Building-Roof 1.png",
+         "imageheight":160,
+         "imagewidth":320
+        }, 
+        {
+         "id":38,
+         "image":"Buildings n Props\/Village Set_Building - Window 04.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":39,
+         "image":"Buildings n Props\/Village Set_Building - Window 03.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":40,
+         "image":"Buildings n Props\/Village Set_Building - Window 02.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":41,
+         "image":"Buildings n Props\/Village Set_Building - Window 01.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":42,
+         "image":"Buildings n Props\/Village Set_Building - Wide Door 02.png",
+         "imageheight":256,
+         "imagewidth":256
+        }, 
+        {
+         "id":43,
+         "image":"Buildings n Props\/Village Set_Building - Wide Door 01.png",
+         "imageheight":256,
+         "imagewidth":256
+        }, 
+        {
+         "id":44,
+         "image":"Buildings n Props\/Village Set_Building - Wall C 03.png",
+         "imageheight":320,
+         "imagewidth":128
+        }, 
+        {
+         "id":45,
+         "image":"Buildings n Props\/Village Set_Building - Wall C 02.png",
+         "imageheight":320,
+         "imagewidth":320
+        }, 
+        {
+         "id":46,
+         "image":"Buildings n Props\/Village Set_Building - Wall C 01.png",
+         "imageheight":320,
+         "imagewidth":128
+        }, 
+        {
+         "id":47,
+         "image":"Buildings n Props\/Village Set_Building - Wall B 03.png",
+         "imageheight":320,
+         "imagewidth":128
+        }, 
+        {
+         "id":48,
+         "image":"Buildings n Props\/Village Set_Building - Wall B 02.png",
+         "imageheight":320,
+         "imagewidth":320
+        }, 
+        {
+         "id":49,
+         "image":"Buildings n Props\/Village Set_Building - Wall B 01.png",
+         "imageheight":320,
+         "imagewidth":128
+        }, 
+        {
+         "id":50,
+         "image":"Buildings n Props\/Village Set_Building - Wall A 03.png",
+         "imageheight":320,
+         "imagewidth":128
+        }, 
+        {
+         "id":51,
+         "image":"Buildings n Props\/Village Set_Building - Wall A 02.png",
+         "imageheight":320,
+         "imagewidth":320
+        }, 
+        {
+         "id":52,
+         "image":"Buildings n Props\/Village Set_Building - Wall A 01.png",
+         "imageheight":320,
+         "imagewidth":128
+        }, 
+        {
+         "id":53,
+         "image":"Buildings n Props\/Village Set_Building - Roof B 05.png",
+         "imageheight":160,
+         "imagewidth":352
+        }, 
+        {
+         "id":54,
+         "image":"Buildings n Props\/Village Set_Building - Roof B 04.png",
+         "imageheight":160,
+         "imagewidth":352
+        }, 
+        {
+         "id":55,
+         "image":"Buildings n Props\/Village Set_Building - Roof B 03.png",
+         "imageheight":160,
+         "imagewidth":128
+        }, 
+        {
+         "id":56,
+         "image":"Buildings n Props\/Village Set_Building - Roof B 02.png",
+         "imageheight":160,
+         "imagewidth":320
+        }, 
+        {
+         "id":57,
+         "image":"Buildings n Props\/Village Set_Building - Roof B 01.png",
+         "imageheight":160,
+         "imagewidth":128
+        }, 
+        {
+         "id":58,
+         "image":"Buildings n Props\/Village Set_Building - Roof A 05.png",
+         "imageheight":160,
+         "imagewidth":352
+        }, 
+        {
+         "id":59,
+         "image":"Buildings n Props\/Village Set_Building - Roof A 04.png",
+         "imageheight":160,
+         "imagewidth":352
+        }, 
+        {
+         "id":60,
+         "image":"Buildings n Props\/Village Set_Building - Roof A 03.png",
+         "imageheight":160,
+         "imagewidth":128
+        }, 
+        {
+         "id":61,
+         "image":"Buildings n Props\/Village Set_Building - Roof A 02.png",
+         "imageheight":160,
+         "imagewidth":320
+        }, 
+        {
+         "id":62,
+         "image":"Buildings n Props\/Village Set_Building - Roof A 01.png",
+         "imageheight":160,
+         "imagewidth":128
+        }, 
+        {
+         "id":63,
+         "image":"Buildings n Props\/Village Set_Building - Pillar 07.png",
+         "imageheight":64,
+         "imagewidth":64
+        }, 
+        {
+         "id":64,
+         "image":"Buildings n Props\/Village Set_Building - Pillar 06.png",
+         "imageheight":64,
+         "imagewidth":64
+        }, 
+        {
+         "id":65,
+         "image":"Buildings n Props\/Village Set_Building - Pillar 05.png",
+         "imageheight":64,
+         "imagewidth":64
+        }, 
+        {
+         "id":66,
+         "image":"Buildings n Props\/Village Set_Building - Pillar 04.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":67,
+         "image":"Buildings n Props\/Village Set_Building - Pillar 03.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":68,
+         "image":"Buildings n Props\/Village Set_Building - Pillar 02.png",
+         "imageheight":320,
+         "imagewidth":64
+        }, 
+        {
+         "id":69,
+         "image":"Buildings n Props\/Village Set_Building - Pillar 02 with knob.png",
+         "imageheight":320,
+         "imagewidth":64
+        }, 
+        {
+         "id":70,
+         "image":"Buildings n Props\/Village Set_Building - Pillar 01.png",
+         "imageheight":64,
+         "imagewidth":320
+        }, 
+        {
+         "id":71,
+         "image":"Buildings n Props\/Village Set_Building - Ladder 02.png",
+         "imageheight":64,
+         "imagewidth":352
+        }, 
+        {
+         "id":72,
+         "image":"Buildings n Props\/Village Set_Building - Ladder 01.png",
+         "imageheight":64,
+         "imagewidth":352
+        }, 
+        {
+         "id":73,
+         "image":"Buildings n Props\/Village Set_Building - Door 04.png",
+         "imageheight":256,
+         "imagewidth":128
+        }, 
+        {
+         "id":74,
+         "image":"Buildings n Props\/Village Set_Building - Door 03.png",
+         "imageheight":256,
+         "imagewidth":128
+        }, 
+        {
+         "id":75,
+         "image":"Buildings n Props\/Village Set_Building - Decor Window 04.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":76,
+         "image":"Buildings n Props\/Village Set_Building - Decor Window 03.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":77,
+         "image":"Buildings n Props\/Village Set_Building - Decor Window 02.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":78,
+         "image":"Buildings n Props\/Village Set_Building - Decor Window 01.png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":79,
+         "image":"Buildings n Props\/Village Set_Building - Decor Roof 04.png",
+         "imageheight":160,
+         "imagewidth":160
+        }, 
+        {
+         "id":80,
+         "image":"Buildings n Props\/Village Set_Building - Decor Roof 03.png",
+         "imageheight":160,
+         "imagewidth":160
+        }, 
+        {
+         "id":81,
+         "image":"Buildings n Props\/Village Set_Building - Decor Roof 02-97.png",
+         "imageheight":160,
+         "imagewidth":160
+        }, 
+        {
+         "id":82,
+         "image":"Buildings n Props\/Village Set_Building - Decor Roof 02-55.png",
+         "imageheight":160,
+         "imagewidth":160
+        }, 
+        {
+         "id":83,
+         "image":"Buildings n Props\/Village Set_Building - Decor Roof 01.png",
+         "imageheight":160,
+         "imagewidth":160
+        }, 
+        {
+         "id":84,
+         "image":"Buildings n Props\/Village Set_Building - Chimney .png",
+         "imageheight":128,
+         "imagewidth":128
+        }, 
+        {
+         "id":85,
+         "image":"Buildings n Props\/Village Set_Building - Canopy 01.png",
+         "imageheight":128,
+         "imagewidth":256
+        }],
+ "tilewidth":480,
+ "type":"tileset",
+ "version":"1.10"
+}

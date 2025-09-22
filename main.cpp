@@ -9,7 +9,7 @@
 
 using namespace std;
 
-const int screenWidth = 1200;
+const int screenWidth = 1600;
 const int screenHeight = 600;
 
 void showErrorAndExit(const char *errMsg) {
@@ -47,7 +47,8 @@ int main()
         while (!quit)
         {
             input_handler.handleInput(*currScene);
-            auto nextScene = currScene -> update();
+            float elapsedTime = GetFrameTime();
+            auto nextScene = currScene -> update(elapsedTime);
 
             if (nextScene) {
                 nextScene -> loadResources();
@@ -57,22 +58,23 @@ int main()
             quit = WindowShouldClose() || currScene->shouldQuit();
 
             BeginDrawing();
-            ClearBackground(RAYWHITE);
             currScene -> draw();
             EndDrawing();
         }
-
         CloseAudioDevice();
-
         CloseWindow();
-
-    }catch(runtime_error& e) {
+    }
+    catch(std::runtime_error &e) {
         showErrorAndExit(e.what());
         retVal = EXIT_FAILURE;
+    } catch(const char *e) {
+        showErrorAndExit(e);
+        retVal = EXIT_FAILURE;
+    } catch(...) {
+        showErrorAndExit("An unknown error occurred.");
+        retVal = EXIT_FAILURE;
     }
-
-
-    return 0;
+    return retVal;;
 }
 
 
