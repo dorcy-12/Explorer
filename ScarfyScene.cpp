@@ -27,7 +27,7 @@ void ScarfyScene::loadResources(){
 
     const raylib::Vector2 sceneSize(mapSize.x, mapSize.y);
     raylib::Vector2 cameraOffset(static_cast<float>(screenWidth) /2.0f, static_cast<float>(screenHeight)/2.0f);
-    raylib::Vector2 cameraTarget(static_cast<float>(screenWidth)/2.0f,  (450+sceneSize.y ) - (static_cast<float>(screenHeight)/2.0f) );
+    raylib::Vector2 cameraTarget(static_cast<float>(screenWidth)/2.0f,  (440+sceneSize.y ) - (static_cast<float>(screenHeight)/2.0f) );
 
     const auto camera = make_shared<TrackingCamera2D>(cameraOffset, cameraTarget, 0, 0.7f);
     setCamera(camera);
