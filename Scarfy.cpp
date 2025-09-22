@@ -18,7 +18,7 @@ Scarfy::Scarfy(){
 
     numFrames = 6;
     frameWidth = image.width / 6;
-    frameDelay = 7.0f;
+    frameDelay = 5.0f / 60.0f;
     frameDelayCounter = 0;
     frameIndex = 0;
     frameRect = Rectangle{ 0.0f, 0.0f, static_cast<float>(frameWidth), static_cast<float>(image.height) } ;
@@ -50,7 +50,9 @@ void Scarfy::draw() {
  *
  */
 
-bool Scarfy::update(float elapsedTime) {
+bool Scarfy::update(float elapsedTime, b2WorldId worldId) {
+    CharacterActor::update(elapsedTime, worldId);
+    b2Vec2 oldPos = getPosition();
     const auto &velocity = getVelocity();
     bool scarfyMoving = isMoving();
 
@@ -66,8 +68,11 @@ bool Scarfy::update(float elapsedTime) {
             if (isOnGround) {
                 frameIndex++;
                 frameIndex %= numFrames;
-
+                // After one frame, check actual position change
+                TraceLog(LOG_INFO, "Velocity: %.2f m/s, Position: (%.2f, %.2f)",
+                         velocity.x, oldPos.x, oldPos.y);
                 if (frameIndex == leftFootFrame || frameIndex == rightFootFrame) {
+
                     PlaySound(footStepSound);
                 }
             } else {

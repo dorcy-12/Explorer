@@ -61,11 +61,11 @@ void Scene::start() {
 shared_ptr<Scene> Scene::update(const float elapsedTime) {
     b2World_Step(physicsWorldId, timeStep, subStepCount);
     for(const auto &actor : actors) {
-        actor->update(elapsedTime);
+        actor->update(elapsedTime, physicsWorldId);
     }
 
     if(camera) {
-        camera->update(elapsedTime);
+        camera->update(elapsedTime, physicsWorldId);
     }
 
     if(exit) {
@@ -223,9 +223,5 @@ void Scene::handleKeyPress(int key) {
         default:
             ;
     }
-}
-
-std::shared_ptr<TrackingCamera2D> & Scene::getCamera() {
-    return camera;
 }
 

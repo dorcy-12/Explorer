@@ -11,7 +11,7 @@ Actor::Actor() {
 
 Actor::~Actor() = default;
 
-bool Actor::update(float elapsedTime) {
+bool Actor::update(float elapsedTime, b2WorldId worldId) {
     return true;
 }
 

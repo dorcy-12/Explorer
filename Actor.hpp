@@ -18,7 +18,7 @@ public:
 	 * @return bool true if this actor still exists, and false if it has "exited
 	 * the scene, never to return" (e., dead)
 	 */
-	virtual bool update(float elapsedTime);
+	virtual bool update(float elapsedTime, b2WorldId worldId);
 
 	/** Draws this actor to the display.
 	 *
@@ -81,7 +81,7 @@ public:
 
 public:
 	/** Is this actor currently on the ground?.
-	 * This is set by the physics simluation.
+	 * This is set by the physics simulation.
 	 */
 	bool isOnGround{};
 

@@ -27,7 +27,23 @@ public:
 	/** Select, push, pull, punch, fire, etc.
 	 */
 	virtual void doInteractWith();
+
+    /**
+     *
+     * @param elapsedTime
+     * @param worldId
+     * @return
+     */
+    bool update(float elapsedTime, b2WorldId worldId) override;
+
+
 protected:
+    /**
+     *
+     * @param worldId
+     * @return
+     */
+    bool senseGround(b2WorldId worldId);
 	/**
 	 * @param friction
 	 * sets The character's friction with objects around it like the ground
@@ -56,5 +72,11 @@ protected:
 	//PhysicsObject frictionAdjuster;
 
 	float friction;
+
+    int groundContactCount = 0;
+
+    b2ShapeId physicsBodyShapeId;
+
+    b2ShapeId physicsSensorShapeId;
 
 };

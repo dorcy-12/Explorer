@@ -29,7 +29,7 @@ public:
 
     std::shared_ptr<Actor> getTarget();
 
-    bool update (float elapsedTime) override ;
+    bool update (float elapsedTime, b2WorldId worldId) override ;
 
 private:
     /** Performs basic camera initialization.

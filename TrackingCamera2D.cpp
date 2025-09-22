@@ -33,7 +33,7 @@ std::shared_ptr<Actor> TrackingCamera2D::getTarget() {
     return targetActor;
 }
 
-bool TrackingCamera2D::update(float elapsedTime) {
+bool TrackingCamera2D::update(float elapsedTime, b2WorldId worldId) {
     if (!targetActor) return true;
 
     float zoom = GetZoom();
@@ -46,14 +46,14 @@ bool TrackingCamera2D::update(float elapsedTime) {
     const int screenWidth = GetScreenWidth();
 
     if (targetVelocity.x > 0) {
-        targetOffset = -calcAbsTargetOffset(screenWidth, zoom);
-    } else if(targetVelocity.x < 0) {
         targetOffset = calcAbsTargetOffset(screenWidth, zoom);
+    } else if(targetVelocity.x < 0) {
+        targetOffset = -calcAbsTargetOffset(screenWidth, zoom);
     }
     // Vector2Lerp is linear interpolation mechanism to make the movements of the camera less harsh
     // Vector2Lerp(start, end, factor); it moves from the start to the end by doing camera_pos = start +(end−start)*factor
     // otherwise changing camera target (as we are doing above) would happen instantaneously (too harsh)
-    this->target = Vector2Lerp(this->target, targetPosition + targetOffset , 0.5f);
+    this->target = Vector2Lerp(this->target, targetPosition + targetOffset , 0.9f);
 
     return true;
 }

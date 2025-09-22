@@ -221,7 +221,8 @@ void TileMap2D::generatePhysicsObjects(b2WorldId worldId, const raylib::Camera2D
 
                                     b2ShapeDef polyShapeDef = b2DefaultShapeDef();
                                     polyShapeDef.density = 1.0f;
-                                    polyShapeDef.material.friction = 0.3f;
+                                    polyShapeDef.material.friction = 0.0f;
+                                    polyShapeDef.enableSensorEvents = true;
                                     b2CreatePolygonShape(bodyId, &polyShapeDef, &polygon);
                                     bodyCount++;
                                 } else {
@@ -240,7 +241,8 @@ void TileMap2D::generatePhysicsObjects(b2WorldId worldId, const raylib::Camera2D
                             b2Polygon rectangle = b2MakeBox(static_cast<float>(rectSize.x) / 2.0f, static_cast<float>(rectSize.y) / 2.0f);
                             b2ShapeDef rectShapeDef = b2DefaultShapeDef();
                             rectShapeDef.density = 1.0f;
-                            rectShapeDef.material.friction = 0.3f;
+                            rectShapeDef.material.friction = 0.0f;
+                            rectShapeDef.enableSensorEvents = true;
                             b2CreatePolygonShape(bodyId, &rectShapeDef, &rectangle);
                             bodyCount++;
                             break;

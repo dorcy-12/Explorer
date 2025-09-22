@@ -12,7 +12,7 @@ public:
 
     void draw() override;
 
-    bool update(float elapsedTime) override;
+    bool update(float elapsedTime, b2WorldId worldId) override;
 
     raylib::Rectangle getBoundingBox() override;
 
