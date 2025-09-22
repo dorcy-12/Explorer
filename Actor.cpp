@@ -1,8 +1,13 @@
 
 #include "Actor.hpp"
-static const b2Vec2 zeroVector(0.0f, 0.0f);
+static constexpr b2Vec2 zeroVector = {0.0f, 0.0f};
 
-Actor::Actor() = default;
+Actor::Actor() {
+    physicsBodyId = {};
+    isOnGround = false;
+    wasOnGround = false;
+
+};
 
 Actor::~Actor() = default;
 
@@ -14,6 +19,10 @@ void Actor::draw() {
 }
 
 void Actor::drawBoundingBox(const Color &color) {
+    auto boundingBox = getBoundingBox();
+
+    float lineThickness =2.0f;
+    DrawRectangleLinesEx(boundingBox, lineThickness, color);
 }
 
 raylib::Rectangle Actor::getBoundingBox() {

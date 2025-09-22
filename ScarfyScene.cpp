@@ -16,31 +16,32 @@ ScarfyScene::~ScarfyScene() {
 }
 
 void ScarfyScene::loadResources(){
-    int screenWidth = GetScreenWidth();
-    int screenHeight = GetScreenHeight();
+    const int screenWidth = GetScreenWidth();
+    const int screenHeight = GetScreenHeight();
 
     tileMap = std::make_shared<TileMap2D>(DATADIR "ScarfyMap.tmj");
+    const b2WorldId worldId = getPhysicsWorld();
 
-    tileMap->generatePhysicsObjects(worldId); // we generate the ground layer physics.
 
-    auto mapSize = get2DSize();
+    const auto mapSize = get2DSize();
 
-    raylib::Vector2 sceneSize(mapSize.x, mapSize.y);
-    raylib::Vector2 cameraOffset(screenWidth/2, screenHeight/2);
-    raylib::Vector2 cameraTarget(screenWidth/2,  (550+sceneSize.y ) - (screenHeight/2) );
+    const raylib::Vector2 sceneSize(mapSize.x, mapSize.y);
+    raylib::Vector2 cameraOffset(static_cast<float>(screenWidth) /2.0f, static_cast<float>(screenHeight)/2.0f);
+    raylib::Vector2 cameraTarget(static_cast<float>(screenWidth)/2.0f,  (450+sceneSize.y ) - (static_cast<float>(screenHeight)/2.0f) );
 
-    // todo - Fix the Ground Position
-    groundYPos = cameraTarget.y + screenHeight + 370;
-
-    auto camera = make_shared<TrackingCamera2D>(cameraOffset, cameraTarget, 0, 0.7f);
-
+    const auto camera = make_shared<TrackingCamera2D>(cameraOffset, cameraTarget, 0, 0.7f);
     setCamera(camera);
 
-    auto scarfy = make_shared<Scarfy>(); // create our scarfy actor
+    tileMap->generatePhysicsObjects(worldId, *camera); // we generate the ground layer physics.
 
-    scarfy->position = raylib::Vector2(screenWidth / 2, groundYPos);
+    // todo - Fix the Ground Position
+    const float groundYPos = cameraTarget.y + (static_cast<float>(screenHeight)/4.0f);
 
-    this->camera->setTarget(scarfy);
-    playerAvatar = scarfy;
-    actors.emplace_back(scarfy);
+    const auto scarfy = make_shared<Scarfy>(); // create our scarfy actor
+    const b2Vec2 initialPos = {static_cast<float>(screenWidth) / (2.0f * 0.7f), groundYPos};
+    addActor(scarfy, initialPos);
+    setPlayerAvatar(scarfy);
+
+
+    camera->setTarget(scarfy);
 }

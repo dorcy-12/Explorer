@@ -9,13 +9,17 @@
 #define STANDING_FRICTION 1.0f
 
 CharacterActor::CharacterActor() {
+    facingRight = true;
+    setFriction(MOVING_FRICTION);
+
+    walkSpeed = 12;
+    jumpSpeed = 2.2f * walkSpeed;
 }
 
 CharacterActor::~CharacterActor() {
 }
 
-void CharacterActor::createPhysicsBody(b2WorldId world_id,  const b2Vec2 &position,
-    const b2Vec2 &velocity) {
+void CharacterActor::createPhysicsBody(b2WorldId world_id,  const b2Vec2 &position, const b2Vec2 &velocity) {
     raylib::Rectangle boundingBox = getBoundingBox();
 
     b2BodyDef bodyDef = b2DefaultBodyDef();
@@ -23,7 +27,6 @@ void CharacterActor::createPhysicsBody(b2WorldId world_id,  const b2Vec2 &positi
     bodyDef.position = position;
     bodyDef.linearVelocity = velocity;
     float halfWidth = boundingBox.width / 2.0f;
-    float halfHeight = boundingBox.height / 2.0f;
 
     //TODO: Friction Callback
 
@@ -32,18 +35,21 @@ void CharacterActor::createPhysicsBody(b2WorldId world_id,  const b2Vec2 &positi
     float torsoHeight = boundingBox.height - halfWidth; //?
     float torsoHalfHeight = torsoHeight / 2.0f;
 
-    b2Capsule capsule; //TODO: Test if this works
-    capsule.center1 = {0.0f, 0.0f};
-    capsule.center2 = {0.0f, torsoHeight };
-    capsule.radius = halfWidth;
+    b2Capsule capsule;
+    capsule.center1 = {0.0f, -torsoHalfHeight};
+    capsule.center2 = {0.0f, torsoHalfHeight };
+    capsule.radius = halfWidth / 2.0f;
 
     b2ShapeDef capsuleShapeDef = b2DefaultShapeDef();
     capsuleShapeDef.density = 1.0f;
     capsuleShapeDef.material.friction=  MOVING_FRICTION;
+    capsuleShapeDef.material.customColor = b2_colorChocolate;
 
     b2CreateCapsuleShape(bodyId, &capsuleShapeDef, &capsule);
 
-    //TODO: Add sensors
+    physicsBodyId = bodyId;
+
+    //TODO: Add ground sensors
 
 
 }
