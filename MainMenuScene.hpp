@@ -9,7 +9,7 @@ public:
     ~MainMenuScene() override;
     void draw() override;
     bool shouldQuit() override;
-    shared_ptr<Scene> update() override;
+    shared_ptr<Scene> update(float elapsedTime) override;
 
 private:
     bool quitClicked;

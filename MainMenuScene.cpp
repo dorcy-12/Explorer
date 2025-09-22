@@ -40,7 +40,7 @@ void MainMenuScene::draw() {
    if ( quitClicked) shouldQuit();
 }
 
-shared_ptr<Scene> MainMenuScene::update() {
+shared_ptr<Scene> MainMenuScene::update(float elapsedTime) {
    if (startClicked) return make_shared<ScarfyScene>();
    return nullptr;
 }
