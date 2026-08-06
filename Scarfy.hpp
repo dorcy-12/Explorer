@@ -1,47 +1,35 @@
 #pragma once
 #include "Actor.hpp"
+#include "CharacterActor.hpp"
+#include "raylib-cpp.hpp"
 
-class Scarfy : public Actor {
+
+class Scarfy : public CharacterActor {
 public:
     Scarfy();
 
     virtual ~Scarfy();
 
-    virtual void draw();
+    void draw() override;
 
-    virtual void update(bool onGround);
+    bool update(float elapsedTime, b2WorldId worldId) override;
 
-    virtual Rectangle getBoundingBox();
-
-    void goUp();
-
-    void goDown();
-
-    void goLeft() ;
-
-    void goRight();
-
-    void goNowhere();
-
-    void interact();
+    raylib::Rectangle getBoundingBox() override;
 
 
 private:
+
+    raylib::Vector2 getUpperLeftPosition();
     Texture2D image;
-
-
     Sound footStepSound;
     Sound landingSound;
 
     unsigned numFrames;
     int frameWidth;
-    int frameDelay;
-    int frameDelayCounter;
+    float frameDelay;
+    float frameDelayCounter;
     unsigned frameIndex;
     Rectangle frameRect;
-
-    float jumpSpeed;
-    float walkSpeed;
 
     bool isOnGround;
 };

@@ -2,7 +2,7 @@
 // Created by Dorcy Agape on 08.10.24.
 //
 
-#include "Command.h"
+#include "Command.hpp"
 
 Command::Command() {
 }
@@ -28,3 +28,8 @@ void Command::goNowhere() {
 void Command::interact() {
 }
 
+void Command::doExit() {
+}
+
+void Command::handleKeyPress(int key) {
+}

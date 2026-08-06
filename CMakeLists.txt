@@ -1,11 +1,16 @@
 cmake_minimum_required(VERSION 3.29)
+include(FetchContent)
 project(Explorer)
 
 set(CMAKE_CXX_STANDARD 20)
-set(RAYGUI_DIR "${CMAKE_SOURCE_DIR}/raygui-master")
-
-#include raygui header
-include_directories(${RAYGUI_DIR}/src)
+FetchContent_Declare(
+        box2d
+        GIT_REPOSITORY https://github.com/erincatto/box2d.git
+        GIT_TAG main
+        GIT_SHALLOW TRUE
+        GIT_PROGRESS TRUE
+)
+FetchContent_MakeAvailable(box2d)
 
 #find raylib
 find_package(raylib REQUIRED)
@@ -22,7 +27,7 @@ add_executable(Explorer main.cpp
         InputHandler.cpp
         InputHandler.hpp
         Command.cpp
-        Command.h
+        Command.hpp
         Scene.cpp
         Scene.hpp
         Actor.hpp
@@ -33,7 +38,29 @@ add_executable(Explorer main.cpp
         ScarfyScene.hpp
         MainMenuScene.cpp
         MainMenuScene.hpp
+        tileson.hpp
+        TileMap2DScene.cpp
+        TileMap2DScene.hpp
+        TileMapLoader.cpp
+        TileMapLoader.hpp
+        pocketlzma.hpp
+        TrackingCamera2D.cpp
+        TrackingCamera2D.hpp
+        TileMap2D.cpp
+        TileMap2D.hpp
+        Common.hpp
+        CharacterActor.hpp
+        CharacterActor.cpp
+        DrawPhysics.hpp
+        DrawPhysics.cpp
 )
+# Adding raylib-cpp (raylib c++ wrapper)
+add_subdirectory(${CMAKE_SOURCE_DIR}/ThirdParty/raylib-cpp)
+target_link_libraries(Explorer PRIVATE raylib_cpp)
+
+# raygui header file
+target_include_directories(Explorer PRIVATE ${CMAKE_SOURCE_DIR}/ThirdParty/raygui)
+
 
 #target_link_libraries(Explorer raylib ${OPENGL_FRAMEWORK} ${COCOA_FRAMEWORK} ${IOKIT_FRAMEWORK} ${GLUT_FRAMEWORK} ${COREVIDEO_FRAMEWORK})
-target_link_libraries(Explorer raylib ${OPENGL_FRAMEWORK} ${COCOA_FRAMEWORK} ${IOKIT_FRAMEWORK})
+target_link_libraries(Explorer PRIVATE raylib box2d ${OPENGL_FRAMEWORK} ${COCOA_FRAMEWORK} ${IOKIT_FRAMEWORK})

@@ -1,11 +1,11 @@
 #pragma once
-#include "Command.h"
+#include "Command.hpp"
 
 class InputHandler {
 public:
   InputHandler();
   virtual ~InputHandler();
-  void handleInput(Command& command);
+  void handleInput(Command& listener);
 };
 
 
